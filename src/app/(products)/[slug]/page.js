@@ -60,14 +60,7 @@ const Page = async ({ params }) => {
     );
   }
 
-  const heroData = [
-    {
-      title: "Automotive Lubricants",
-      description:
-        "Carter Oil has powered global industries since 1893, when John Joyce Carter founded a pioneering company that shaped energy markets and advanced reliable lubrication solutions.",
-      backgroundImage: "/service-hero.jpg",
-    },
-  ];
+ 
 
   return (
     <div>

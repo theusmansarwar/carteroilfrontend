@@ -1,9 +1,14 @@
 "use client";
 import React from "react";
 import "./BuildingQuality.css";
-import { TiStarFullOutline, TiStarHalfOutline, TiStarOutline } from "react-icons/ti";
+import {
+  TiStarFullOutline,
+  TiStarHalfOutline,
+  TiStarOutline,
+} from "react-icons/ti";
 import { FaArrowRight } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
+import { baseUrl } from "@/config/Config";
 
 const BuildingQuality = ({ data }) => {
   const router = useRouter();
@@ -12,7 +17,9 @@ const BuildingQuality = ({ data }) => {
       <div className="buildings-bg"></div>
       <div className="left">
         <div className="top">
-          <div className="first"></div>
+          <div className="first">
+            <img src={baseUrl + data.image1} alt="Image" />
+          </div>
           <div className="second">
             {" "}
             <strong>{data.yearsOfExperience}+</strong>
@@ -22,7 +29,9 @@ const BuildingQuality = ({ data }) => {
             </p>
           </div>
         </div>
-        <div className="bottom"></div>
+        <div className="bottom">
+          <img src={baseUrl + data.image2} alt="Image" />
+        </div>
       </div>
       <div className="right">
         <h2>{data.title}</h2>

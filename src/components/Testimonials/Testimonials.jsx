@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import "./testimonials.css";
+import "./Testimonials.css";
 import { IoIosStar } from "react-icons/io";
 import { FaArrowLeft, FaArrowRight, FaThumbsUp } from "react-icons/fa6";
 
