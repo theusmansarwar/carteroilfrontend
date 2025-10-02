@@ -62,7 +62,7 @@ export default function Home() {
       <HistoricLegacy />
       <HistoryCards />
       <ReliableSolutions />
-      <Button2 label={"Gallery"}/>
+      {/* <Button2 label={"Gallery"}/> */}
       <Collaborations />
       <Button2 label={"Testimonials"}/>
       <Testimonials />
