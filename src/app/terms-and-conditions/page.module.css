@@ -1,0 +1,18 @@
+.termsPage {
+  width: 100%;
+  padding: 20px var(--left-space);
+  margin-top: 90px;
+}
+
+.termsLayout {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 900px) {
+  .termsPage {
+    margin-top: 70px;
+  }
+  .termsLayout {
+    flex-direction: column;
+  }
+}

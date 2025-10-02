@@ -1,0 +1,45 @@
+.blog-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: var(--default-p-size);
+  width: fit-content;
+  min-width: 150px;
+  padding: 0 12px;
+  height: 32px;
+  top: -15px;
+  left: 150px;
+  border: none;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+
+/* Only if it has onClick */
+.blog-btn.clickable {
+  cursor: pointer;
+}
+
+.blog-btn.clickable:hover {
+  opacity: 0.9;
+}
+.blog-btn .icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+.button2-desc {
+  text-align: center;
+  width: 90%;
+  margin: 10px auto;
+  font-size: var(--default-p-size);
+  line-height: var(--p-line-height);
+}
+@media (max-width: 900px) {
+  .blog-btn {
+    display: none;
+  }
+}

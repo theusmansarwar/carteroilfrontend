@@ -1,0 +1,204 @@
+.building-quality {
+  width: 100%;
+  padding: 40px var(--left-space);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.building-quality .buildings-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  height: 300px;
+  background: url("/buildings.png") center no-repeat;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0.05;
+}
+.building-quality .left {
+  width: 45%;
+}
+.building-quality .right {
+  width: 50%;
+}
+
+.building-quality .left .top {
+  display: flex;
+  gap: 10px;
+}
+.building-quality .left .top .first {
+  width: 50%;
+  height: 208px;
+  background-color: #c4c4c4;
+  border-radius: 19px;
+}
+.building-quality .left .top .second {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.building-quality .left .top .second strong {
+  color: var(--primary-color);
+  font-size: var(--heading-two);
+}
+.building-quality .left .top .second p span {
+  display: block;
+}
+
+.building-quality .left .bottom {
+  display: flex;
+  justify-self: flex-end;
+  width: 70%;
+  height: 400px;
+  background-color: #c4c4c4;
+  border-radius: 40px;
+  border: 10px solid var(--secondary-color);
+  position: relative;
+  z-index: 2;
+  top: -50px;
+  right: 20px;
+}
+
+/* Right Side */
+.building-quality .right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.building-quality .right h2 span {
+  font-size: var(--heading-one);
+  display: block;
+  font-weight: 300;
+  line-height: var(--heading-line-height);
+}
+.building-quality .right h2 span:last-child {
+  font-weight: var(--bold-font-weight);
+}
+.building-quality .right p {
+  font-size: var(--default-p-size);
+  line-height: var(--p-line-height);
+}
+.building-quality .right .bottom {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.building-quality .right .bottom .left {
+  width: 50%;
+}
+.building-quality .right .bottom .left ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--default-p-size);
+  line-height: var(--p-line-height);
+  margin-bottom: 20px;
+}
+.building-quality .right .bottom .left button {
+  outline: none;
+  border: 2px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.building-quality .right .bottom .left button .btn-text {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-right: 1px solid var(--primary-color);
+  padding: 8px 16px;
+  padding-left: 6px;
+  position: relative;
+  z-index: 2;
+  right: -8px;
+  background-color: var(--secondary-color);
+}
+.building-quality .right .bottom .left button .btn-icon {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: var(--primary-color);
+  padding: 7px 10px;
+}
+.building-quality .right .bottom .left button .btn-icon svg {
+  color: var(--secondary-color);
+  flex-shrink: 0;
+  transition: 0.3s ease;
+  transform: rotate(-45deg);
+  font-size: 18px;
+}
+.building-quality .right .bottom .left button:hover .btn-icon svg {
+  transform: rotate(0deg);
+}
+
+.building-quality .right .bottom .right {
+  width: 50%;
+  height: 250px;
+  background-color: #f5f5f5;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.building-quality .right .bottom .right strong {
+  font-size: 70px;
+  font-weight: var(--bold-font-weight);
+}
+.building-quality .right .bottom .right svg {
+  color: var(--primary-color);
+}
+.building-quality .right .bottom .right p {
+  color: #81848a;
+  font-size: var(--default-p-size);
+}
+
+@media (max-width: 900px) {
+  .building-quality {
+    padding: 20px var(--left-space);
+    flex-direction: column;
+  }
+  .building-quality .buildings-bg {
+    display: none;
+  }
+  .building-quality .left {
+    width: 100%;
+  }
+  .building-quality .right {
+    width: 100%;
+  }
+  .building-quality .left .top .first {
+    width: 60%;
+    height: 150px;
+  }
+  .building-quality .left .top .second p span {
+    display: inline;
+  }
+  .building-quality .left .bottom {
+    width: 80%;
+    height: 250px;
+    top: -40px;
+    right: 0px;
+  }
+  .building-quality .right h2 span {
+    display: inline;
+  }
+  .building-quality .right .bottom {
+    flex-direction: column;
+  }
+  .building-quality .right .bottom .left {
+    width: 100%;
+  }
+  .building-quality .right .bottom .right {
+    width: 100%;
+    height: 150px;
+  }
+  .building-quality .right .bottom .right strong {
+    font-size: 40px;
+  }
+}

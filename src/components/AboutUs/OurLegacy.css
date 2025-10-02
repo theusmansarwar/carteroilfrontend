@@ -1,0 +1,37 @@
+.our-legacy {
+  width: 100%;
+  padding: 40px var(--left-space);
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.our-legacy .legacy-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+  min-height: 530px;
+}
+.our-legacy .legacy-card h2 {
+  font-size: var(--heading-two);
+}
+.our-legacy .legacy-card img {
+  height: 220px;
+  width:60%;
+}
+.our-legacy .legacy-card p {
+  font-size: var(--default-p-size);
+  line-height: var(--p-line-height);
+}
+@media (max-width: 900px) {
+  .our-legacy {
+    padding: 20px var(--left-space);
+    gap: 20px;
+    flex-direction: column;
+  }
+  .our-legacy .legacy-card {
+    width: 100%;
+    min-height: fit-content;
+  }
+}

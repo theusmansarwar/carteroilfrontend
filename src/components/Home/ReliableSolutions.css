@@ -1,0 +1,56 @@
+.reliable-solutions {
+  width: 100%;
+  height: 450px;
+  padding: 40px 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.reliable-solutions .sol-bg {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background: url("/reliable-sols-bg.jpg") bottom no-repeat;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.reliable-solutions > * {
+  position: relative;
+  z-index: 1;
+}
+.reliable-solutions .content-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 5%;
+}
+
+.reliable-solutions .content-container h2 {
+  font-size: var(--heading-two);
+}
+.reliable-solutions .content-container h2 span {
+  color: var(--primary-color);
+}
+.reliable-solutions .content-conatiner p {
+  font-size: var(--default-p-size);
+  line-height: var(--p-line-height);
+}
+
+@media (max-width: 900px) {
+  .reliable-solutions {
+    height: fit-content;
+    padding: 20px 5%;
+  }
+  .reliable-solutions .sol-bg {
+    display: none;
+  }
+  .reliable-solutions .content-container {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
