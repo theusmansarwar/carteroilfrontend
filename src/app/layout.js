@@ -10,12 +10,40 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-export const metadata = {
-  title: "Carter Oil",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde impedit saepe mollitia porro odio!",
-};
+const title = "Carter Oil";
+const description =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde impedit saepe mollitia porro odio!";
 
+const url = "https://carteroilusa.com";
+const image = "/favicon.svg";
+
+export const metadata = {
+  title,
+  description,
+  icons: {
+    icon: "/favicon.svg",
+  },
+  openGraph: {
+    title,
+    description,
+    url,
+    type: "article",
+    images: [
+      {
+        url: image,
+        width: 1200,
+        height: 630,
+        alt: title,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [image],
+  },
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
