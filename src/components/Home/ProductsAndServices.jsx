@@ -21,7 +21,7 @@ const products = [
   {
     icon: "/marine-lubricant.svg",
     title: "Marine Lubricants",
-    slug: "amarine-lubricants",
+    slug: "marine-lubricants",
     description:
       "Specialty products made for marine engines and harsh environments. You ensure safety and performance at sea.",
   },

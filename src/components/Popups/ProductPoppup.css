@@ -13,7 +13,7 @@
 
 .product-popup .popup-card {
   background-color: var(--secondary-color);
-  width: 60%;
+  width: 65%;
   padding: 30px;
   display: flex;
   gap: 20px;
@@ -50,7 +50,7 @@
   max-width: 100%;
 }
 .product-popup .popup-card .left h3 {
-  font-size: var(--heading-three);
+  font-size: var(--heading-four);
   text-align: center;
   line-height: var(--heading-line-height);
   color: var(--secondary-color);

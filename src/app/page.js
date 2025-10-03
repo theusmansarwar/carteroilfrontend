@@ -34,7 +34,7 @@ const faqs = {
     {
       question: "What oilfield services does Carteroil provide?",
       answer:
-        "NCarteroil offers inspection, control panel manufacturing, tubing fabrication, and equipment rentals. Our services support both onshore and offshore projects.",
+        "Carteroil offers inspection, control panel manufacturing, tubing fabrication, and equipment rentals. Our services support both onshore and offshore projects.",
     },
     {
       question: "How does Carteroil ensure product quality?",
@@ -57,14 +57,16 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <Button2 label={"Products & Services"}/>
+      <Button2 label={"Products & Services"} />
       <ProductsAndServices />
       <HistoricLegacy />
       <HistoryCards />
       <ReliableSolutions />
-      {/* <Button2 label={"Gallery"}/> */}
+      <div style={{position:"relative",top:"30px"}}>
+        <Button2 label={"Gallery"} />
+      </div>
       <Collaborations />
-      <Button2 label={"Testimonials"}/>
+      <Button2 label={"Testimonials"} />
       <Testimonials />
       <CoreValues />
       <OurValues />

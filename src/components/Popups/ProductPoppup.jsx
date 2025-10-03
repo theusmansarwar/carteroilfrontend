@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { IoCloseCircleSharp } from "react-icons/io5";
 import { baseUrl } from "@/config/Config";
 const ProductPoppup = ({ onClose, product }) => {
-  const router = useRouter;
+  const router = useRouter();
   return (
     <div className="product-popup">
       <div className="popup-card">

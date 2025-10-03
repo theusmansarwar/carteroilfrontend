@@ -110,28 +110,28 @@ const Footer = () => {
             <ul>
               <li
                 onClick={() => {
-                  router.push("/automotive-lubricant");
+                  router.push("/automotive-lubricants");
                 }}
               >
                 Automotive Lubricants
               </li>
               <li
                 onClick={() => {
-                  router.push("/industrial-lubricant");
+                  router.push("/industrial-lubricants");
                 }}
               >
                 Industrial Lubricants
               </li>
               <li
                 onClick={() => {
-                  router.push("/marine-lubricant");
+                  router.push("/marine-lubricants");
                 }}
               >
                 Marine Lubricants
               </li>
               <li
                 onClick={() => {
-                  router.push("/oilfield-lubricant");
+                  router.push("/oilfield-lubricants");
                 }}
               >
                 Oilfield Lubricants
@@ -145,7 +145,7 @@ const Footer = () => {
               </li>
               <li
                 onClick={() => {
-                  router.push("/speciality-lubricant");
+                  router.push("/speciality-lubricants");
                 }}
               >
                 Speciality Lubricants

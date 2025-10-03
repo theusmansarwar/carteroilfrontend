@@ -74,7 +74,7 @@ const BuildingQuality = ({ data }) => {
                 }
               })}
             </div>
-            <p>{data.noOfRatings} Genuine Rating</p>
+            <p>{data.noOfRatings}K Genuine Rating</p>
           </div>
         </div>
       </div>

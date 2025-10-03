@@ -25,9 +25,11 @@
   width: auto;
   max-width: 100%;
 }
+.history-grid .history-card:nth-last-child(2) .left img {
+  height: auto
+}
 .history-grid .history-card:last-child .left img {
-  height: auto; 
-  width: auto;
+  max-height: 200px;
 }
 
 

@@ -13,6 +13,9 @@
 .history-cards .each-card .left {
   width: 20%;
 }
+.history-cards .each-card:nth-last-child(2) .left img {
+  height: auto;
+}
 .history-cards .each-card:last-child .left img {
   max-height: 150px;
 }
