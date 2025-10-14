@@ -63,10 +63,10 @@ const Footer = () => {
               </li>
               <li
                 onClick={() => {
-                  router.push("/industries");
+                  router.push("/history");
                 }}
               >
-                Industries
+                History
               </li>
             </ul>
           </div>
@@ -88,13 +88,7 @@ const Footer = () => {
               >
                 Lube Guide
               </li>
-              <li
-                onClick={() => {
-                  router.push("/history");
-                }}
-              >
-                History
-              </li>
+              
               <li
                 onClick={() => {
                   router.push("/suppliers");
