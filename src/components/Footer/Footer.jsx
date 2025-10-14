@@ -31,8 +31,8 @@ const Footer = () => {
         <div className="footer-logo-area">
           <img src="/carter-oil-logo.svg" alt="Carter Oil" />
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-            nemo ratione dolorum soluta veritatis nisi .
+            Carter Oil USA delivers premium lubricants and equipment solutions,
+            ensuring performance, reliability, and smooth operations worldwide.
           </p>
         </div>
 

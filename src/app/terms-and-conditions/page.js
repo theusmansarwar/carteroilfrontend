@@ -4,7 +4,7 @@ import Button2 from "@/components/Buttons/Button2";
 export const metadata = {
   title: "Terms and Conditions | Carter Oil",
   description:
-    "DigitalAura offers SEO, PPC, branding, social media, and YouTube automation to help your business gain visibility, leads, and long-term growth.",
+    "Review the terms that define your experience with Carter Oil USA. Our policies ensure fairness, clarity, and confidence in every product and service we deliver.",
 };
 
 const page = () => {

@@ -1,243 +1,185 @@
 "use client";
 import React from "react";
 import "./Extra.css";
-import { useRouter } from "next/navigation";
 
 const TermsAndConditions = () => {
-  const router = useRouter();
   return (
     <div className="extra">
-      <h1>Terms And Conditions</h1>
+      <h1>Terms & Conditions — Carter Oil USA</h1>
+
+      <h2>Introduction</h2>
       <p>
-        <strong>Welcome to DigitalAura!</strong> These Terms and Conditions set
-        the rules for using our website and services. Please read them
-        carefully. Accessing our site means you agree to these terms. If you do
-        not agree, you should stop using the site and services.
+        Welcome to <strong>Carter Oil USA</strong>, a trusted name in
+        high-performance lubricants and industrial solutions. By accessing or
+        using our website (
+        <a
+          href="https://www.carteroilusa.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          www.carteroilusa.com
+        </a>
+        ) and our products or services, you agree to comply with these Terms and
+        Conditions. Please read them carefully, as they outline your rights,
+        responsibilities, and the rules for using our platform.
       </p>
       <p>
-        We provide digital marketing, design, and growth solutions. Our goal is
-        to deliver value and build long-term trust. These terms explain what you
-        can expect from us and what we expect from you.
+        Carter Oil USA provides premium lubricants and industrial solutions for
+        automotive, marine, oilfield, and specialty applications. Our products
+        are designed for professional use by businesses, distributors, and
+        industrial clients worldwide.
       </p>
 
-      <h2>Use of Website</h2>
+      <h2>Agreement to Terms</h2>
+      <p>
+        By using our website or placing an order, you confirm that you are at
+        least 18 years old and authorized to enter into a binding agreement. If
+        you do not agree with these terms, please discontinue the use of our
+        website immediately.
+      </p>
+      <p>
+        Carter Oil USA reserves the right to update or modify these terms at any
+        time without prior notice. Any changes will be reflected on this page
+        with a revised “Last Updated” date.
+      </p>
+
+      <h2>Intellectual Property Rights</h2>
+      <p>
+        All content on the Carter Oil USA website—including text, images,
+        product descriptions, logos, graphics, design layouts, and downloadable
+        files—is the property of Carter Oil USA or its licensors.
+      </p>
+      <p>
+        You may not copy, modify, reproduce, distribute, or exploit any part of
+        the website or our intellectual property without prior written consent.
+        Unauthorized use of our trademarks or content may result in legal
+        action.
+      </p>
+
+      <h2>Products and Services</h2>
+      <p>
+        Carter Oil USA specializes in a wide range of lubricant solutions
+        tailored for diverse industrial and commercial needs, including:
+      </p>
       <ul>
-        <li>You may use our website for personal or business purposes.</li>
         <li>
-          Do not attempt to harm the site, copy protected material, or misuse
-          any feature.
+          <strong>Automotive Lubricants –</strong> Engine oils, transmission
+          fluids, brake fluids, and coolants designed for high performance and
+          protection.
         </li>
-        <li>Use the website only for legal purposes.</li>
-        <li>Respect intellectual property and copyrights.</li>
-        <li>Avoid sharing false or harmful content.</li>
-        <li>Not try to hack, damage, or misuse the platform.</li>
+        <li>
+          <strong>Industrial Lubricants –</strong> Hydraulic oils, compressor
+          oils, and greases that keep heavy machinery running smoothly.
+        </li>
+        <li>
+          <strong>Marine Lubricants –</strong> High-grade oils engineered to
+          resist corrosion and provide reliability in marine environments.
+        </li>
+        <li>
+          <strong>Oilfield Lubricants –</strong> Specialized lubricants designed
+          for drilling, exploration, and production operations.
+        </li>
+        <li>
+          <strong>Equipment Lubricants –</strong> Heavy-duty oils suitable for
+          construction, agricultural, and mechanical equipment.
+        </li>
+        <li>
+          <strong>Specialty Lubricants –</strong> Customized formulations to
+          meet specific industrial challenges.
+        </li>
       </ul>
       <p>
-        Content on the website belongs to Digital Aura unless clearly marked
-        otherwise. You may not copy, reuse, or publish our content without
-        permission.
+        Product information and specifications on our website are provided for
+        reference only. While we strive for accuracy, Carter Oil USA does not
+        guarantee that descriptions, colors, or technical data are error-free.
+        Product availability and pricing may vary without notice.
       </p>
 
-      <h2>Account Registration</h2>
+      <h2>Pricing & Payment</h2>
       <p>
-        Some services require you to create an account. You must provide
-        accurate details when registering. Incorrect details may cause delays or
-        account issues.
+        All prices listed on our website are in U.S. Dollars (USD) unless stated
+        otherwise. Prices are subject to change due to market conditions, raw
+        material fluctuations, or promotional updates.
       </p>
       <p>
-        Keep your login details private. Do not share your account with others.
-        You are responsible for any actions under your account. If you notice
-        unusual activity, let us know immediately.
-      </p>
-      <p>We may suspend or close accounts that:</p>
-      <ul>
-        <li>Break our rules.</li>
-        <li>Show false details.</li>
-        <li>Are linked to harmful activity.</li>
-      </ul>
-
-      <h2>Services Provided</h2>
-      <p>
-        Digital Aura provides different digital marketing and creative services
-        including content creation, SEO, social media management, PPC ads,
-        branding, and web design. Each service follows an agreement based on
-        your needs.
-      </p>
-      <p>
-        Service delivery depends on timelines and scope. Any changes to the
-        scope may affect pricing or delivery dates. We have the right to decline
-        projects that go against our values or policies.
+        Payment methods accepted include credit/debit cards, wire transfers, and
+        other secure payment options as displayed during checkout. Carter Oil
+        USA reserves the right to refuse or cancel any order suspected of fraud
+        or unauthorized activity.
       </p>
 
-      <h2>Payments and Billing</h2>
+      <h2>Shipping & Delivery</h2>
       <p>
-        Payments must be made on time. Clear pricing is shared before a project
-        starts. Delays in payment may affect delivery.
+        We aim to deliver products promptly and safely. Shipping timelines
+        depend on order size, product availability, and destination. Carter Oil
+        USA is not responsible for delays caused by customs, logistics partners,
+        or unforeseen events such as natural disasters.
       </p>
       <p>
-        We may request upfront payments for some services. Taxes or extra
-        charges may apply based on your region.
+        Customers are responsible for providing accurate shipping information.
+        Any incorrect details that result in delays or loss will not be the
+        responsibility of Carter Oil USA.
       </p>
-      <p>
-        Your payment details remain safe through secure systems. We do not store
-        sensitive payment details directly.
-      </p>
-      <p>If payments are late:</p>
-      <ul>
-        <li>Services may be paused.</li>
-        <li>Access to work may be delayed.</li>
-        <li>Additional charges may apply in repeated cases.</li>
-      </ul>
-
-      <h2>Intellectual Property</h2>
-      <p>
-        Work created by Digital Aura belongs to us until full payment is made.
-        After full payment, rights transfer to you as agreed in the contract.
-      </p>
-      <p>
-        Our brand name, logo, and design elements remain our property. You may
-        not use them without permission. Clients must ensure that the content
-        they share with us does not violate any third-party rights.
-      </p>
-
-      <h2>Confidentiality</h2>
-      <p>
-        We respect the information you share with us. All personal or business
-        details remain private. We will not disclose them unless required by law
-        or necessary to deliver services.
-      </p>
-      <p>You must also respect our business details, including:</p>
-      <ul>
-        <li>Pricing and proposals.</li>
-        <li>Internal processes and strategies.</li>
-        <li>Confidential project details.</li>
-      </ul>
-
-      <h2>Third-Party Tools</h2>
-      <p>
-        Our services may use third-party tools or platforms, such as Google Ads,
-        Facebook, or analytics software. We do not control these platforms.
-        Using them may require you to accept their terms as well.
-      </p>
-      <p>We are not responsible for:</p>
-      <ul>
-        <li>Issues caused by third-party platforms.</li>
-        <li>Their privacy policies.</li>
-        <li>Their service outages or changes.</li>
-      </ul>
-
-      <h2>Cookies and Data</h2>
-      <p>
-        Our website may use cookies to improve your experience. Cookies are
-        small files saved on your device. They help us remember preferences and
-        measure performance.
-      </p>
-      <p>Cookies help us:</p>
-      <ul>
-        <li>Track visitor activity.</li>
-        <li>Improve navigation.</li>
-        <li>Show relevant content and ads.</li>
-        <li>Measure traffic and campaign results.</li>
-      </ul>
-      <p>
-        You may disable cookies in your browser settings. Some features may not
-        work fully if cookies are disabled.
-      </p>
-
-      <h2>Sharing of Information</h2>
-      <p>We share data only when needed. Information may be shared with:</p>
-      <ul>
-        <li>Service providers like hosting, email, and payment vendors.</li>
-        <li>New owners if Digital Aura merges, sells, or transfers control.</li>
-        <li>Courts or regulators if required by law.</li>
-      </ul>
-      <p>
-        We never sell your personal information to advertisers. Any sharing
-        follows strict agreements that protect your data.
-      </p>
-
-      <h2>Ending Services</h2>
-      <p>
-        You may end services by giving us written notice. Terms in your contract
-        apply.
-      </p>
-      <p>We may end services if:</p>
-      <ul>
-        <li>You break the rules.</li>
-        <li>Payments are missed.</li>
-        <li>Accounts are misused.</li>
-        <li>Illegal or harmful activity is found.</li>
-      </ul>
 
       <h2>Limitation of Liability</h2>
       <p>
-        Digital Aura aims to deliver high-quality services. However, we cannot
-        guarantee specific results. Many factors, such as market changes and
-        platform updates, are beyond our control.
+        Carter Oil USA shall not be liable for any indirect, incidental, or
+        consequential damages arising from the use or inability to use our
+        website or products.
       </p>
-      <p>We are not responsible for:</p>
-      <ul>
-        <li>Indirect losses such as profit or data loss.</li>
-        <li>Service downtime from third-party tools.</li>
-        <li>Issues caused by client misuse or wrong details.</li>
-      </ul>
-      <p>Our liability is limited to the amount you paid for services.</p>
-
-      <h2>Indemnity</h2>
       <p>
-        You agree to protect Digital Aura from claims, losses, or expenses
-        caused by your misuse of services or breaking these terms.
+        Our lubricants are intended for professional use, and users are expected
+        to follow the recommended usage guidelines and safety instructions
+        provided with each product. Carter Oil USA is not responsible for
+        damages caused by improper application, misuse, or failure to comply
+        with operational standards.
       </p>
 
-      <h2>Dispute Resolution</h2>
+      <h2>Warranty Disclaimer</h2>
       <p>
-        We aim to solve issues quickly and fairly. If you face a problem, please
-        contact us first. We will work to resolve it.
+        Carter Oil USA provides limited warranties only as explicitly stated
+        with individual products. We make no express or implied warranties,
+        including those of merchantability or fitness for a particular purpose.
       </p>
       <p>
-        If disputes continue, they may be handled under the courts of our
-        region.
-      </p>
-
-      <h2>Updates to Terms</h2>
-      <p>
-        We may update these Terms and Conditions at any time. Updates will
-        appear on our website. Using the website or services after updates means
-        you accept the new terms.
+        All lubricant performance results may vary depending on conditions,
+        machinery type, and operational practices.
       </p>
 
       <h2>Governing Law</h2>
       <p>
-        These terms follow the laws of the region where Digital Aura operates.
-        Any disputes will be handled under those laws.
+        These Terms and Conditions shall be governed by and construed in
+        accordance with the laws of the United States of America. Any dispute
+        arising under these terms shall be subject to the exclusive jurisdiction
+        of the courts located in the U.S.
       </p>
 
-      <h2>Contact Us</h2>
+      <h2>Contact Information</h2>
       <p>
-        You can reach us if you have questions about these Terms and Conditions
-        through:
+        For questions regarding these Terms and Conditions, please contact us:
       </p>
       <ul>
         <li>
-          Our official website
-          <span
-            onClick={() => {
-              router.push("/contact-us");
-            }}
-          >
-            contact form
-          </span>
-        </li>
-        <li>
-          Our official email{" "}
+          Email:{" "}
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=info@digitalaura.se"
+            href="mailto:info@carteroilusa.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            info@digitalaura.se
+            info@carteroilusa.com
           </a>
         </li>
+        <li>
+          Website:{" "}
+          <a
+            href="https://www.carteroilusa.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            www.carteroilusa.com
+          </a>
+        </li>
+        <li>Carter Oil USA – Leading Lubricant Solutions for Every Industry</li>
       </ul>
     </div>
   );

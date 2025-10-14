@@ -1,11 +1,10 @@
 import PrivacyPolicy from "@/components/ExtraPages/PrivacyPolicy";
 import styles from "./page.module.css";
-import Button2 from "@/components/Buttons/Button2";
 
 export const metadata = {
-  title: "Terms and Conditions | Carter Oil",
+  title: "Privacy Policy | Carter Oil",
   description:
-    "DigitalAura offers SEO, PPC, branding, social media, and YouTube automation to help your business gain visibility, leads, and long-term growth.",
+    "Discover how Carter Oil USA protects your personal data and keeps your information secure. We value your privacy and are committed to transparency, safety, and trust at every step.",
 };
 
 const page = () => {

@@ -85,12 +85,13 @@
 
 .footer-logo-area {
   flex: 1;
-  max-width: 250px;
+  max-width: 270px;
 }
 
 .footer-logo-area p {
   font-size: var(--default-p-size);
   line-height: var(--p-line-height);
+  margin-top: 10px;
 }
 
 .footer-links {
