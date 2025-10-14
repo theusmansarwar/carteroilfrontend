@@ -13,13 +13,13 @@ import Button2 from "@/components/Buttons/Button2";
 export const metadata = {
   title: "Carter Oil",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde impedit saepe mollitia porro odio!",
+    "Carteroil delivers trusted lubricants and oilfield services worldwide, combining over 125 years of expertise with advanced technology and safety.",
 };
 
 const faqs = {
   title: "Frequently Asked Questions",
   description:
-    "You may have questions about how Digital Aura helps your brand grow online. Our FAQ section gives you clear answers so you know exactly what to expect. Each answer is simple, easy to follow, and focused on helping you understand our services better.",
+    "Find quick answers to common questions about Carteroil’s products, services, and global operations. Learn how our lubricants and oilfield solutions can support your business with proven reliability and performance.",
   questions: [
     {
       question: "What does Carteroil offer?",

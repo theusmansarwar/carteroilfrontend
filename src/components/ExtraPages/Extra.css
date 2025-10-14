@@ -6,6 +6,14 @@
   padding: 20px 0;
 }
 
+.extra h1 {
+  font-size: var(--heading-two);
+  line-height: var(--heading-line-height);
+  margin: 10px 0;
+  color: var(--primary-color);
+  text-align: center;
+}
+
 .extra h2 {
   font-size: var(--heading-three);
   line-height: var(--heading-line-height);

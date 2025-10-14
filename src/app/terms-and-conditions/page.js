@@ -10,7 +10,6 @@ export const metadata = {
 const page = () => {
   return (
     <div className={styles.termsPage}>
-      <Button2 label={"Terms and Conditions"} />
       <div className={styles.termsLayout}>
         <TermsAndConditions />
       </div>

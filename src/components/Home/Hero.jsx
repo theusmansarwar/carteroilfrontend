@@ -12,7 +12,7 @@ const heroData = [
     image: "/service-hero.jpg",
     title1: "Industry-Wide",
     title2: "Lubrication Solutions",
-    desc: "Premium lubricants and oilfield services trusted worldwide since 1893.",
+    desc: "Trusted performance built on 125+ years of expertise, innovation, and safety.",
     btn1: { text: "Explore Lubricants", link: "/contact-us" },
     btn2: { text: "Request a Quote", link: "/contact-us" },
   },

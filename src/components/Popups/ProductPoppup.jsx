@@ -19,7 +19,10 @@ const ProductPoppup = ({ onClose, product }) => {
         </div>
         <div className="right">
           <h2>{product.title}</h2>
-          <p>{product.description}</p>
+           <div
+          className="popup-description"
+          dangerouslySetInnerHTML={{ __html: product?.description || "" }}
+        />
           <Button
             variant="filled"
             color="white"

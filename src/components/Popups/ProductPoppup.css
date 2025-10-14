@@ -66,7 +66,7 @@
   font-size: var(--heading-three);
   color: var(--primary-color);
 }
-.product-popup .popup-card .right p {
+.product-popup .popup-card .right .popup-description {
   font-size: var(--default-p-size);
   line-height: var(--p-line-height);
   min-height: 200px;

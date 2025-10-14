@@ -7,6 +7,7 @@ const TermsAndConditions = () => {
   const router = useRouter();
   return (
     <div className="extra">
+      <h1>Terms And Conditions</h1>
       <p>
         <strong>Welcome to DigitalAura!</strong> These Terms and Conditions set
         the rules for using our website and services. Please read them

@@ -4,6 +4,7 @@ import "./Extra.css";
 const PrivacyPolicy = () => {
   return (
     <div className="extra">
+      <h1>Privacy Policy</h1>
       <p>
         <strong>Welcome to DigitalAura!</strong> <br /> Your privacy matters to
         us. At Digital Aura, we treat your personal information with care and

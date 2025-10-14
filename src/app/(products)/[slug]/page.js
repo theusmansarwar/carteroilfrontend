@@ -13,7 +13,6 @@ import { fetchProductBySlug } from "@/DAL/Fetch";
 async function getProduct(slug) {
   try {
     const res = await fetchProductBySlug(slug);
-    console.log({ qwertyuqwertyui: res });
     if (res?.product) return res.product;
 
     return null;

@@ -31,8 +31,8 @@ const Footer = () => {
         <div className="footer-logo-area">
           <img src="/carter-oil-logo.svg" alt="Carter Oil" />
           <p>
-            Subscribe to our newsletter and unlock a world of exclusive
-            benefits.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+            nemo ratione dolorum soluta veritatis nisi .
           </p>
         </div>
 

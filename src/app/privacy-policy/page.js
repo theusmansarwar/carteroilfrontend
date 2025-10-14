@@ -1,4 +1,3 @@
-
 import PrivacyPolicy from "@/components/ExtraPages/PrivacyPolicy";
 import styles from "./page.module.css";
 import Button2 from "@/components/Buttons/Button2";
@@ -12,9 +11,8 @@ export const metadata = {
 const page = () => {
   return (
     <div className={styles.privacyPage}>
-      <Button2 label={"Privacy Policy"}  />
       <div className={styles.privacyLayout}>
-        <PrivacyPolicy/>
+        <PrivacyPolicy />
       </div>
     </div>
   );

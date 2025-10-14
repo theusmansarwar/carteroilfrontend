@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import { ToastContainer } from "react-toastify";
+import ViewCounter from "@/components/ViewCounter/ViewCounter";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -12,7 +13,7 @@ const poppins = Poppins({
 
 const title = "Carter Oil";
 const description =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde impedit saepe mollitia porro odio!";
+  "Carteroil delivers trusted lubricants and oilfield services worldwide, combining over 125 years of expertise with advanced technology and safety.";
 
 const url = "https://carteroilusa.com";
 const image = "/favicon.svg";
@@ -47,6 +48,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Digital Aura",
+              url: "https://carteroilusa.com",
+              logo: "https://carteroilusa.com/favicon.svg",
+              // sameAs: [
+              //   "https://linkedin.com/company/thedigitalaura",
+              //   "https://youtube.com/@DigitalAura-h2o",
+              //   "https://facebook.com/share/1CdEhnbb42",
+              //   "https://instagram.com/digitalaura8",
+              // ],
+            }),
+          }}
+        />
+      </head>
       <body className={poppins.variable}>
         <ToastContainer
           position="top-right"
@@ -54,6 +75,7 @@ export default function RootLayout({ children }) {
           pauseOnHover={false}
           newestOnTop
         />
+        <ViewCounter />
         <Header />
         {children}
         <Footer />
