@@ -13,7 +13,7 @@ const heroData = [
   {
     title: "About Us",
     description:
-      "Carteroil has powered industries worldwide since 1893. John Joyce Carter founded the company and shaped early energy markets. The vision led to strong advances in lubrication solutions. Carteroil grew into a leader in the sector. Today, the company delivers reliable and innovative products that support industries across the world.",
+      "Carteroil has powered global industries since 1893. John Joyce Carter started a company that shaped energy markets and built trusted lubrication solutions. Contact Carteroil today and move forward with solutions designed for your success.",
     backgroundImage: "/service-hero.jpg",
   },
 ];

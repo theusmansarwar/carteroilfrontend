@@ -223,9 +223,9 @@ const ContactForm = () => {
           <div className="icon-circle">
             <FaPhoneAlt />
           </div>
-          <div>
-            <strong>Lorem Ipsum</strong>
-            <p>12345678910</p>
+          <div >
+            <strong>Contact No.</strong>
+            <a href="tel:+18329976806">+1 (832) 997-6806</a>
           </div>
         </div>
 
@@ -234,8 +234,15 @@ const ContactForm = () => {
             <MdEmail />
           </div>
           <div>
-            <strong>Lorem Ipsum</strong>
-            <p>Lorem Has Been Ipsum Has</p>
+            <strong>Email</strong>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@carteroilusa.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="email-link"
+            >
+              sales@carteroilusa.com{" "}
+            </a>
           </div>
         </div>
 

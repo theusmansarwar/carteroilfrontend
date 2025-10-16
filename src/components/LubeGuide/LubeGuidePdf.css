@@ -1,0 +1,50 @@
+.lubeguide-pdf {
+  width: 100%;
+  padding: 40px var(--left-space) 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.lubeguide-pdf .first,
+.lubeguide-pdf .second {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+.lubeguide-pdf .first h2,
+.lubeguide-pdf .second h2 {
+  color: var(--secondary-color);
+  font-size: var(--heading-four);
+  font-weight: 500;
+}
+.lubeguide-pdf .first svg,
+.lubeguide-pdf .second svg {
+  color: var(--secondary-color);
+  font-size: var(--heading-three);
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .lubeguide-pdf {
+    flex-direction: column;
+    padding: 20px var(--left-space);
+  }
+  .lubeguide-pdf .first,
+  .lubeguide-pdf .second {
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 15px;
+  }
+  .lubeguide-pdf .first h2,
+  .lubeguide-pdf .second h2 {
+    font-size: 14px;
+  }
+}

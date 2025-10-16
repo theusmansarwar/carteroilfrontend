@@ -89,6 +89,7 @@
   background: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   transition: background 0.3s, transform 0.3s;
+  -webkit-tap-highlight-color: transparent;
 }
 .hero-dots .dot.active {
   background: var(--primary-color);

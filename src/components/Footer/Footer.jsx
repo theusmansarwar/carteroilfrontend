@@ -6,18 +6,58 @@ import { useRouter } from "next/navigation";
 
 const Footer = () => {
   const router = useRouter();
+
+  // 🔹 Object arrays for each section
+  const footerLinks = [
+    {
+      title: "Company",
+      links: [
+        { name: "Home", path: "/" },
+        { name: "Contact Us", path: "/contact-us" },
+        { name: "About Us", path: "/about-us" },
+        { name: "History", path: "/history" },
+      ],
+    },
+    {
+      title: "Quick Links",
+      links: [
+        { name: "Products & Services", path: "/products-and-services" },
+        { name: "Lube Guide", path: "/lube-guide" },
+        { name: "Suppliers", path: "/suppliers" },
+      ],
+    },
+    {
+      title: "Lubricants",
+      links: [
+        { name: "Automotive Lubricants", path: "/automotive-lubricants" },
+        { name: "Industrial Lubricants", path: "/industrial-lubricants" },
+        { name: "Marine Lubricants", path: "/marine-lubricants" },
+        { name: "Oilfield Lubricants", path: "/oilfield-lubricants" },
+        { name: "Equipments", path: "/equipments" },
+        { name: "Speciality Lubricants", path: "/speciality-lubricants" },
+      ],
+    },
+  ];
+
+  const bottomLinks = [
+    { name: "Terms of Service", path: "/terms-and-conditions" },
+    { name: "Privacy Policy", path: "/privacy-policy" },
+  ];
+
+  const socials = [FaFacebookF, FaTwitter, FaVimeoV, FaYoutube];
+
   return (
     <footer className="footer">
       <div className="black-area"></div>
+
       {/* Newsletter Section */}
       <div className="newsletter">
         <div className="left">
-          {" "}
           <h3>Subscribe Newsletters</h3>
           <p>
-            Subscribe to our newsletter and unlock a world of exclusive
-            benefits. Be the first to know about our latest products, special
-            promotions, and exciting updates.
+            Subscribe to our newsletter and unlock a world of exclusive benefits.
+            Be the first to know about our latest products, special promotions,
+            and exciting updates.
           </p>
         </div>
         <div className="newsletter-form">
@@ -36,116 +76,20 @@ const Footer = () => {
           </p>
         </div>
 
+        {/*  Footer Links */}
         <div className="footer-links">
-          <div>
-            <h4>Company</h4>
-            <ul>
-              <li
-                onClick={() => {
-                  router.push("/");
-                }}
-              >
-                Home
-              </li>
-              <li
-                onClick={() => {
-                  router.push("/contact-us");
-                }}
-              >
-                Contact Us
-              </li>
-              <li
-                onClick={() => {
-                  router.push("/about-us");
-                }}
-              >
-                About Us
-              </li>
-              <li
-                onClick={() => {
-                  router.push("/history");
-                }}
-              >
-                History
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Quick Links</h4>
-            <ul>
-              <li
-                onClick={() => {
-                  router.push("/products-and-services");
-                }}
-              >
-                Products & Services
-              </li>
-              <li
-                onClick={() => {
-                  router.push("/lube-guide");
-                }}
-              >
-                Lube Guide
-              </li>
-              
-              <li
-                onClick={() => {
-                  router.push("/suppliers");
-                }}
-              >
-                Suppliers
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Lubricants</h4>
-            <ul>
-              <li
-                onClick={() => {
-                  router.push("/automotive-lubricants");
-                }}
-              >
-                Automotive Lubricants
-              </li>
-              <li
-                onClick={() => {
-                  router.push("/industrial-lubricants");
-                }}
-              >
-                Industrial Lubricants
-              </li>
-              <li
-                onClick={() => {
-                  router.push("/marine-lubricants");
-                }}
-              >
-                Marine Lubricants
-              </li>
-              <li
-                onClick={() => {
-                  router.push("/oilfield-lubricants");
-                }}
-              >
-                Oilfield Lubricants
-              </li>
-              <li
-                onClick={() => {
-                  router.push("/equipments");
-                }}
-              >
-                Equipments
-              </li>
-              <li
-                onClick={() => {
-                  router.push("/speciality-lubricants");
-                }}
-              >
-                Speciality Lubricants
-              </li>
-            </ul>
-          </div>
+          {footerLinks.map((section) => (
+            <div key={section.title}>
+              <h4>{section.title}</h4>
+              <ul>
+                {section.links.map((link) => (
+                  <li key={link.path} onClick={() => router.push(link.path)}>
+                    {link.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -154,28 +98,16 @@ const Footer = () => {
         <p>© 2025 All rights reserved</p>
         <div className="footer-bottom-right">
           <ul>
-            <li
-              onClick={() => {
-                router.push("/terms-and-conditions");
-              }}
-            >
-              {" "}
-              Terms of Service
-            </li>
-            <li
-              onClick={() => {
-                router.push("/privacy-policy");
-              }}
-            >
-              {" "}
-              Privacy Policy{" "}
-            </li>
+            {bottomLinks.map((link) => (
+              <li key={link.path} onClick={() => router.push(link.path)}>
+                {link.name}
+              </li>
+            ))}
           </ul>
           <div className="footer-socials">
-            <FaFacebookF />
-            <FaTwitter />
-            <FaVimeoV />
-            <FaYoutube />
+            {socials.map((Icon, index) => (
+              <Icon key={index} />
+            ))}
           </div>
         </div>
       </div>

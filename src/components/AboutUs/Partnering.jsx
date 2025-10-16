@@ -14,7 +14,6 @@ const Partnering = () => {
           lubricants keep your machines running at their best. You can focus on
           progress, knowing Carteroil delivers the quality that drives success.
         </p>
-        <strong>Lorem ipsum dolor sit amet</strong>
         <button>Lorem Ipsum</button>
       </div>
       <div className="right">

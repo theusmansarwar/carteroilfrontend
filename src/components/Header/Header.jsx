@@ -7,6 +7,7 @@ import { FaAngleDown, FaTimes } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import ProductsDropDown from "../DropDown/ProductsDropDown";
 import { fetchProductsSlugs } from "@/DAL/Fetch";
+import { MdMailOutline } from "react-icons/md";
 
 const Header = () => {
   const router = useRouter();
@@ -23,7 +24,7 @@ const Header = () => {
     const getProducts = async () => {
       try {
         const res = await fetchProductsSlugs();
-        const data = res.slugs;
+        const data = res?.slugs;
         setProducts(data);
       } catch (error) {
         console.error("Failed to fetch product slugs:", error);
@@ -89,16 +90,22 @@ const Header = () => {
 
         {/* Right */}
         <div className="right">
-          <a href="tel:+12345678900">
-            +1 (234) 567-8900
+          <a href="tel:+18329976806">
+            +1 (832) 997-6806
             <span>
               <FiPhoneCall />
             </span>
           </a>
-          <a href="tel:+12345678900">
-            +1 (234) 567-8900
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@carteroilusa.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="email-link"
+          >
+            sales@carteroilusa.com{" "}
             <span>
-              <FiPhoneCall />
+              {" "}
+              <MdMailOutline />{" "}
             </span>
           </a>
 
@@ -155,7 +162,7 @@ const Header = () => {
 
             {isLubricantsOpen && (
               <ul className="mobile-submenu">
-                {products.map((product, idx) => (
+                {products?.map((product, idx) => (
                   <li
                     key={idx}
                     onClick={() => {

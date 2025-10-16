@@ -166,8 +166,10 @@
   display: block;
 }
 
-.info-item p {
+.info-item a {
   font-size: var(--default-p-size);
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .contact-logo {
