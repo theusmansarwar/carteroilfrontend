@@ -4,7 +4,7 @@ import { FiDownload } from "react-icons/fi";
 const LubeGuidePdf = () => {
   return (
     <div className="lubeguide-pdf">
-      <a href="/carteroil.pptx" download="Vehicals Lube Guide" className="first">
+      <a href="#"  className="first">
         <h2>DOWNLOAD VEHICALS LUBE GUIDE PDF</h2>
         <FiDownload />
       </a>
