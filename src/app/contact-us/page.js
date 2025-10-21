@@ -11,7 +11,7 @@ const heroData = [
     title: "Contact Us",
     description:
       "Carteroil has powered global industries since 1893. John Joyce Carter founded a company that shaped the energy market and developed reliable lubrication solutions. Contact us today and take the next step toward dependable support for your business.",
-    backgroundImage: "/service-hero.jpg",
+    backgroundImage: "/contact-us.webp",
   },
 ];
 const page = () => {

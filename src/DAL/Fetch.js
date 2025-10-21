@@ -1,8 +1,8 @@
 import { invokeApi } from "../utils/InvokeApi";
 
-export const fetchAllProducts = async () => {
+export const fetchAllProducts = async (page, rowsPerPages) => {
   const reqObj = {
-    path: `/products/list`,
+    path: `/products/list?${page}&limit=${rowsPerPages}`,
     method: "GET",
     headers: {},
     body: {},

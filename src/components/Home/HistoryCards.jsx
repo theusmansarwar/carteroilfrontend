@@ -57,7 +57,7 @@ const HistoryCards = () => {
   return (
     <div className="history-cards">
       {historyData.map((card, index) => (
-        <div className="each-card" key={index}>
+        <div className="history-each-card" key={index}>
           <div className="left">
             <img src={card.image} alt={card.title} />
           </div>

@@ -21,7 +21,7 @@ const Footer = () => {
     {
       title: "Quick Links",
       links: [
-        { name: "Products & Services", path: "/products-and-services" },
+        { name: "Products & Services", path: "/products" },
         { name: "Lube Guide", path: "/lube-guide" },
         { name: "Suppliers", path: "/suppliers" },
       ],

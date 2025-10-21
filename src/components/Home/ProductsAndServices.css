@@ -57,7 +57,7 @@
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-.products-services .products-container .each-product:hover{
+.products-services .products-container .each-product:hover {
   transform: scale(1.02);
 }
 .products-services .products-container .each-product .icon-container {
@@ -70,12 +70,6 @@
   justify-content: center;
   border: 1px solid var(--primary-color);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
-}
-.products-services
-  .products-container
-  .each-product:nth-child(n + 4)
-  .icon-container {
-  background-color: var(--secondary-color);
 }
 
 .products-services .products-container .each-product .icon-container img {

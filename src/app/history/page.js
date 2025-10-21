@@ -11,7 +11,7 @@ const heroData = [
     title: "History",
     description:
       "Carter Oil has powered global industries since 1893, when John Joyce Carter founded a pioneering company. It shaped the energy markets and advanced reliable lubrication solutions.",
-    backgroundImage: "/service-hero.jpg",
+    backgroundImage: "/history-hero.webp",
   },
 ];
 const page = () => {

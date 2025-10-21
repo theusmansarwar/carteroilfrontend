@@ -14,7 +14,7 @@ const heroData = [
     title: "LUBRICANTS GUIDE",
     description:
       "Explore Carteroil USA’s Lube Guide to find the perfect lubricant for every engine and industry. Maximize performance, protection, and reliability with our expert solutions.",
-    backgroundImage: "/service-hero.jpg",
+    backgroundImage: "/lube-guide-hero.webp",
   },
 ];
 const faqs = {

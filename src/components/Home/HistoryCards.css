@@ -7,39 +7,39 @@
   flex-direction: column;
   gap: 20px;
 }
-.history-cards .each-card {
+.history-cards .history-each-card {
   display: flex;
   gap: 20px;
 }
-.history-cards .each-card .left {
+.history-cards .history-each-card .left {
   width: 20%;
 }
-.history-cards .each-card:nth-last-child(2) .left img {
+.history-cards .history-each-card:nth-last-child(2) .left img {
   height: auto;
 }
-.history-cards .each-card:last-child .left img {
+.history-cards .history-each-card:last-child .left img {
   max-height: 150px;
 }
-.history-cards .each-card .left img {
+.history-cards .history-each-card .left img {
   width: 100%;
   height: 100%;
   border-radius: var(--border-radius);
 }
-.history-cards .each-card .right {
+.history-cards .history-each-card .right {
   width: 80%;
   display: flex;
   flex-direction: column;
   gap: 10px;
   text-align: justify;
 }
-.history-cards .each-card .right h3 {
+.history-cards .history-each-card .right h3 {
   font-size: var(--heading-four);
   font-weight: var(--bold-font-weight);
 }
-.history-cards .each-card .right h3 span {
+.history-cards .history-each-card .right h3 span {
   color: var(--primary-color);
 }
-.history-cards .each-card .right p {
+.history-cards .history-each-card .right p {
   font-size: var(--default-p-size);
   line-height: var(--p-line-height);
 }
@@ -53,16 +53,16 @@
     flex-direction: column;
     gap: 20px;
   }
-  .history-cards .each-card {
+  .history-cards .history-each-card {
     flex-direction: column;
   }
-  .history-cards .each-card .left {
+  .history-cards .history-each-card .left {
     width: 100%;
   }
-  .history-cards .each-card .left img {
+  .history-cards .history-each-card .left img {
     height: 180px;
   }
-  .history-cards .each-card .right {
+  .history-cards .history-each-card .right {
     width: 100%;
   }
 }
