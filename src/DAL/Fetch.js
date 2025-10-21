@@ -27,3 +27,4 @@ export const fetchProductsSlugs = async () => {
   };
   return invokeApi(reqObj);
 };
+

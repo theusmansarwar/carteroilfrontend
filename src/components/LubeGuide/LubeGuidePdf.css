@@ -17,6 +17,8 @@
   background-color: var(--primary-color);
   cursor: pointer;
   text-decoration: none;
+  outline: none;
+  border: none;
 }
 .lubeguide-pdf .first h2,
 .lubeguide-pdf .second h2 {
