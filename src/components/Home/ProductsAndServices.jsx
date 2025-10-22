@@ -4,6 +4,7 @@ import "./ProductsAndServices.css";
 import { useRouter } from "next/navigation";
 import { baseUrl } from "@/config/Config";
 import { fetchAllProducts } from "@/DAL/Fetch";
+import HomeServicesSkeleton from "../SkeletonLoaders/HomeServicesSkeleton";
 
 const ProductsAndServices = () => {
   const router = useRouter();
@@ -26,7 +27,8 @@ const ProductsAndServices = () => {
     getProducts();
   }, []);
 
-  if (loading) return <div className="products-services">Loading...</div>;
+  if (loading) return <HomeServicesSkeleton />;
+
 
   return (
     <div className="products-services">
@@ -47,7 +49,7 @@ const ProductsAndServices = () => {
           <div
             className="each-product"
             key={product._id}
-            onClick={() => router.push(`/${product.slug}`)}
+            onClick={() => router.push(`products/${product.slug}`)}
           >
             <div className="icon-container">
               <img

@@ -17,7 +17,7 @@ export const metadata = {
 };
 
 const faqs = {
-  title: "Frequently Asked Questions",
+  title: "Frequently asked Questions",
   description:
     "Find quick answers to common questions about Carteroil’s products, services, and global operations. Learn how our lubricants and oilfield solutions can support your business with proven reliability and performance.",
   questions: [
@@ -62,7 +62,7 @@ export default function Home() {
       <HistoricLegacy />
       <HistoryCards />
       <ReliableSolutions />
-      <div style={{position:"relative",top:"30px"}}>
+      <div style={{ position: "relative", top: "30px" }}>
         <Button2 label={"Gallery"} />
       </div>
       <Collaborations />

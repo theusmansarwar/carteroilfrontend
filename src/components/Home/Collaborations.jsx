@@ -1,8 +1,11 @@
+"use client"
 import React from "react";
 import "./Collaborations.css";
 import Button from "../Buttons/Button";
+import { useRouter } from "next/navigation";
 
 const Collaborations = () => {
+  const router = useRouter();
   return (
     <div className="collaborations">
       <h2>COLLABORATIONS</h2>
@@ -42,10 +45,18 @@ const Collaborations = () => {
               Power Industries Worldwide.
             </p>
             <div className="buttons-container">
-              <Button variant="filled" color="white">
+              <Button
+                variant="filled"
+                color="white"
+                onClick={() => {
+                  router.push("/products");
+                }}
+              >
                 Explore Lubricants
               </Button>
-              <Button variant="outline" color="white">
+              <Button variant="outline" color="white"   onClick={() => {
+              router.push("/contact-us");
+            }}>
                 Request a Quote
               </Button>
             </div>

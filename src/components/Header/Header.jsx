@@ -4,12 +4,21 @@ import "./Header.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FiPhoneCall } from "react-icons/fi";
 import { FaAngleDown, FaTimes } from "react-icons/fa";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import ProductsDropDown from "../DropDown/ProductsDropDown";
 import { fetchProductsSlugs } from "@/DAL/Fetch";
 import { MdMailOutline } from "react-icons/md";
 
+const navLinks = [
+  { name: "Home", path: "/" },
+  { name: "Lubricants", path: "/products" },
+  { name: "History", path: "/history" },
+  { name: "About Us", path: "/about-us" },
+  { name: "Contact", path: "/contact-us" },
+];
+
 const Header = () => {
+  const pathname = usePathname();
   const router = useRouter();
   const [products, setProducts] = useState();
   const [showDropdown, setShowDropdown] = useState(false); // desktop dropdown
@@ -48,43 +57,24 @@ const Header = () => {
             }}
           />
           <ul className="header-links">
-            <li
-              onClick={() => {
-                router.push("/");
-              }}
-            >
-              Home
-            </li>
+            {navLinks.map((link, index) => {
+              const isLubricants = link.name === "Lubricants";
+              const isActive = pathname === link.path;
 
-            <li
-              className="has-dropdown"
-              onMouseEnter={visibleDropdown}
-              onMouseLeave={hidedropdown}
-            >
-              Lubricants <FaAngleDown />
-            </li>
-            <li
-              onClick={() => {
-                router.push("/history");
-              }}
-            >
-              History
-            </li>
-            <li
-              onClick={() => {
-                router.push("/about-us");
-              }}
-            >
-              About Us
-            </li>
-
-            <li
-              onClick={() => {
-                router.push("/contact-us");
-              }}
-            >
-              Contact
-            </li>
+              return (
+                <li
+                  key={index}
+                  className={`${isActive ? "active" : ""} ${
+                    isLubricants ? "has-dropdown" : ""
+                  }`}
+                  onClick={() => router.push(link.path)}
+                  onMouseEnter={isLubricants ? visibleDropdown : undefined}
+                  onMouseLeave={isLubricants ? hidedropdown : undefined}
+                >
+                  {link.name} {isLubricants && <FaAngleDown />}
+                </li>
+              );
+            })}
           </ul>
         </div>
 
@@ -138,69 +128,59 @@ const Header = () => {
       {/* Mobile Nav */}
       <div className={`mobile-menu ${mobileMenu ? "open" : ""}`}>
         <ul>
-          <li
-            onClick={() => {
-              router.push("/");
-              setMobileMenu(false);
-            }}
-          >
-            Home
-          </li>
-          <li>
-            <div className="mobile-services-row">
-              <span
-                className="mobile-link"
-                onClick={() => setIsLubricantsOpen(!isLubricantsOpen)}
-              >
-                Lubricants
-              </span>
-              <FaAngleDown
-                className={`expand-icon ${isLubricantsOpen ? "open" : ""}`}
-                onClick={() => setIsLubricantsOpen(!isLubricantsOpen)}
-              />
-            </div>
+          {navLinks.map((link, index) => {
+            const isLubricants = link.name === "Lubricants";
+            const isActive = pathname === link.path;
 
-            {isLubricantsOpen && (
-              <ul className="mobile-submenu">
-                {products?.map((product, idx) => (
+            return (
+              <React.Fragment key={index}>
+                {!isLubricants ? (
                   <li
-                    key={idx}
+                    className={isActive ? "active" : ""}
                     onClick={() => {
-                      router.push(`/${product.slug}`);
+                      router.push(link.path);
                       setMobileMenu(false);
                     }}
                   >
-                    {product.title}
+                    {link.name}
                   </li>
-                ))}
-              </ul>
-            )}
-          </li>
+                ) : (
+                  <li>
+                    <div className="mobile-services-row">
+                      <span
+                        className={`mobile-link ${isActive ? "active" : ""}`}
+                        onClick={() => setIsLubricantsOpen(!isLubricantsOpen)}
+                      >
+                        {link.name}
+                      </span>
+                      <FaAngleDown
+                        className={`expand-icon ${
+                          isLubricantsOpen ? "open" : ""
+                        }`}
+                        onClick={() => setIsLubricantsOpen(!isLubricantsOpen)}
+                      />
+                    </div>
 
-          {/* Other menu items */}
-
-          <li
-            onClick={() => {
-              router.push("/history");
-            }}
-          >
-            History
-          </li>
-          <li
-            onClick={() => {
-              router.push("/about-us");
-            }}
-          >
-            About Us
-          </li>
-          <li
-            onClick={() => {
-              router.push("/contact-us");
-              setMobileMenu(false);
-            }}
-          >
-            Contact
-          </li>
+                    {isLubricantsOpen && (
+                      <ul className="mobile-submenu">
+                        {products?.map((product, idx) => (
+                          <li
+                            key={idx}
+                            onClick={() => {
+                              router.push(`/products/${product.slug}`);
+                              setMobileMenu(false);
+                            }}
+                          >
+                            {product.title}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                )}
+              </React.Fragment>
+            );
+          })}
         </ul>
       </div>
     </>

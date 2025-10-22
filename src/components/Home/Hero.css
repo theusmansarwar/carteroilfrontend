@@ -93,7 +93,7 @@
 }
 .hero-dots .dot.active {
   background: var(--primary-color);
-  transform: scale(1.2);
+  transform: scale(1.06);
 }
 
 @media (max-width: 900px) {

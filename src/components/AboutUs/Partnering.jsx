@@ -1,6 +1,9 @@
+"use client"
 import React from "react";
 import "./Partnering.css";
+import { useRouter } from "next/navigation";
 const Partnering = () => {
+  const router = useRouter();
   return (
     <div className="partnering">
       <div className="left">
@@ -14,10 +17,16 @@ const Partnering = () => {
           lubricants keep your machines running at their best. You can focus on
           progress, knowing Carteroil delivers the quality that drives success.
         </p>
-        <button>Lorem Ipsum</button>
+        <button
+          onClick={() => {
+            router.push("/contact-us");
+          }}
+        >
+          Contact Us
+        </button>
       </div>
       <div className="right">
-        <img src="/collaboration3.jpg" alt="Success" />
+        <img src="/partnering.webp" alt="Success" />
       </div>
     </div>
   );

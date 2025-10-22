@@ -33,10 +33,10 @@ const CoreValues = ({ data }) => {
       <button
         className="core-values-btn"
         onClick={() => {
-          router.push("/contact-us");
+          router.push("/about-us");
         }}
       >
-        Lorem Ipsum
+        Learn More
       </button>
 
       <div className="stats-footer">

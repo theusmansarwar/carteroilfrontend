@@ -22,12 +22,18 @@ const Faqs = ({ data }) => {
 
   return (
     <div className="faq-section">
-      <h2 className="faq-heading">{data?.title}</h2>
+      <h2 className="faq-heading">
+        {data?.title?.split(" ").slice(0, -1).join(" ")}{" "}
+        <span className="highlight-last">
+          {data?.title?.split(" ").slice(-1)}
+        </span>
+      </h2>
+
       <p className="faq-description">{data?.description}</p>
       <div className="faq-container">
         <div className="faq-left">
           <img
-            src={data?.image ? baseUrl + data.image : "/faqs.jpg"}
+            src={data?.image ? baseUrl + data.image : "/faqs.webp"}
             alt="FAQs"
           />
         </div>

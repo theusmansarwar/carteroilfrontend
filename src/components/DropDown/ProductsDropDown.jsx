@@ -13,7 +13,7 @@ const ProductsDropDown = ({ data }) => {
           <li
             key={index}
             className="drop-menu-item"
-            onClick={() => router.push(`/${item.slug}`)}
+            onClick={() => router.push(`/products/${item.slug}`)}
             style={{ cursor: "pointer" }}
           >
             {item.title}

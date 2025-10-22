@@ -11,14 +11,14 @@
   flex-direction: column;
   gap: 15px;
   width: 50%;
-  min-height: 530px;
+  min-height: 540px;
 }
 .our-legacy .legacy-card h2 {
   font-size: var(--heading-two);
 }
 .our-legacy .legacy-card img {
   height: 220px;
-  width:60%;
+  width:100%;
 }
 .our-legacy .legacy-card p {
   font-size: var(--default-p-size);
@@ -34,4 +34,7 @@
     width: 100%;
     min-height: fit-content;
   }
+  .our-legacy .legacy-card img {
+  height: 180px;
+}
 }

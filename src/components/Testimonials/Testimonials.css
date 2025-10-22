@@ -7,8 +7,8 @@
 
 .testimonials h2 {
   font-size: var(--heading-two);
-  text-align: center;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .testimonials h2 span {
@@ -19,8 +19,6 @@
   font-size: var(--default-p-size);
   line-height: var(--p-line-height);
   width: 70%;
-  margin: 0 auto;
-  text-align: center;
   color: #666;
 }
 

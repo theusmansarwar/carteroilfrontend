@@ -8,7 +8,6 @@
 }
 .core-strengths h2 {
   font-size: var(--heading-two);
-  text-align: center;
   line-height: var(--heading-line-height);
 }
 .core-strengths .strength-container {
@@ -20,7 +19,7 @@
   margin-top: 30px;
 }
 .core-strengths .strength-container .each-strength {
-  width: 30%;
+  width: 31%;
   min-height: 200px;
   display: flex;
   flex-direction: column;

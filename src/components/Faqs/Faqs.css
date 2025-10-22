@@ -9,7 +9,11 @@
 .faq-section .faq-heading {
   font-size: var(--heading-two);
   text-align: center;
+  font-weight: 400;
+}
+.faq-heading .highlight-last {
   color: var(--primary-color);
+  font-weight: 700;
 }
 .faq-section .faq-description {
   font-size: var(--default-p-size);

@@ -1,4 +1,5 @@
-
+"use client";
+import { useRouter } from "next/navigation";
 import "./History.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -55,9 +56,9 @@ const historyData = [
 ];
 
 const History = () => {
+  const router = useRouter();
   return (
     <div className="history-grid">
-      
       {historyData.map((item, index) => (
         <div
           key={item._id || index}
@@ -76,9 +77,15 @@ const History = () => {
             </h2>
             <p>{item.description}</p>
 
-            <button>
-              Lorem Ipsum <FaArrowRightLong />
-            </button>
+            {index === 0 && (
+              <button
+                onClick={() => {
+                  router.push("/contact-us");
+                }}
+              >
+                Contact Us <FaArrowRightLong />
+              </button>
+            )}
           </div>
         </div>
       ))}

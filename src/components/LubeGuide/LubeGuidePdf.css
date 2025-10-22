@@ -19,6 +19,11 @@
   text-decoration: none;
   outline: none;
   border: none;
+  transition: transform 0.3s ease;
+}
+.lubeguide-pdf .first:hover,
+.lubeguide-pdf .second:hover{
+  transform: scale(1.01);
 }
 .lubeguide-pdf .first h2,
 .lubeguide-pdf .second h2 {

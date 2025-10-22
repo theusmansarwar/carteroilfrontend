@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import Button from "../Buttons/Button";
 import { useRouter } from "next/navigation";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+import { FaArrowLeft, FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 // Hero Data
 const heroData = [
@@ -13,7 +13,7 @@ const heroData = [
     title1: "Industry-Wide",
     title2: "Lubrication Solutions",
     desc: "Trusted performance built on 125+ years of expertise, innovation, and safety.",
-    btn1: { text: "Explore Lubricants", link: "/contact-us" },
+    btn1: { text: "Explore Lubricants", link: "/products" },
     btn2: { text: "Request a Quote", link: "/contact-us" },
   },
   {
@@ -22,7 +22,7 @@ const heroData = [
     title1: "Reliable",
     title2: "Oilfield Services",
     desc: "Powering operations worldwide with advanced technology and proven reliability.",
-    btn1: { text: "Our Services", link: "/services" },
+    btn1: { text: "Our Services", link: "/products" },
     btn2: { text: "Contact Sales", link: "/contact-us" },
   },
   {
@@ -31,7 +31,7 @@ const heroData = [
     title1: "Sustainable",
     title2: "Energy Solutions",
     desc: "Backed by over a century of innovation and trusted by industries across the globe.",
-    btn1: { text: "Learn More", link: "/about" },
+    btn1: { text: "Learn More", link: "/products" },
     btn2: { text: "Get a Quote", link: "/contact-us" },
   },
 ];
@@ -102,10 +102,10 @@ const Hero = () => {
 
       {/* Arrows */}
       <div className="hero-arrow left" onClick={prevSlide}>
-        <FaChevronLeft />
+        <FaArrowLeft />
       </div>
       <div className="hero-arrow right" onClick={nextSlide}>
-        <FaChevronRight />
+        <FaArrowRight />
       </div>
 
       {/* Dots */}

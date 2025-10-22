@@ -32,6 +32,7 @@
 
 .reliable-solutions .content-container h2 {
   font-size: var(--heading-two);
+  text-transform: uppercase;
 }
 .reliable-solutions .content-container h2 span {
   color: var(--primary-color);

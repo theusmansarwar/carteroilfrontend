@@ -30,7 +30,7 @@ const ProductPoppup = ({ onClose, product }) => {
               router.push("/contact-us");
             }}
           >
-            Contact Now
+            Order Now
           </Button>
         </div>
       </div>

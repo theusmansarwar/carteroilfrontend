@@ -29,12 +29,12 @@ const Footer = () => {
     {
       title: "Lubricants",
       links: [
-        { name: "Automotive Lubricants", path: "/automotive-lubricants" },
-        { name: "Industrial Lubricants", path: "/industrial-lubricants" },
-        { name: "Marine Lubricants", path: "/marine-lubricants" },
-        { name: "Oilfield Lubricants", path: "/oilfield-lubricants" },
-        { name: "Equipments", path: "/equipments" },
-        { name: "Speciality Lubricants", path: "/speciality-lubricants" },
+        { name: "Automotive Lubricants", path: "/products/automotive-lubricants" },
+        { name: "Industrial Lubricants", path: "/products/industrial-lubricants" },
+        { name: "Marine Lubricants", path: "/products/marine-lubricants" },
+        { name: "Oilfield Lubricants", path: "/products/oilfield-lubricants" },
+        { name: "Equipments", path: "/products/equipments" },
+        { name: "Speciality Lubricants", path: "/products/speciality-lubricants" },
       ],
     },
   ];

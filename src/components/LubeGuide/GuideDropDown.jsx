@@ -10,52 +10,52 @@ const GuideItems = [
   {
     id: "1",
     title: "18 Wheeler Trucks Lubrication Guide",
-    imageSrc: "/lube-guide2.png",
+    imageSrc: "/18-wheeler-guide.webp",
   },
   {
     id: "2",
     title: "Agriculture Equipment Lubrication Guide",
-    imageSrc: "/lube-guide2.png",
+    imageSrc: "/agri-equipment-guide.webp",
   },
   {
     id: "3",
     title: "Buses Lubrication Guide",
-    imageSrc: "/lube-guide2.png",
+    imageSrc: "/buses-guide.webp",
   },
   {
     id: "4",
     title: "Construction Equipment Lubrication Guide",
-    imageSrc: "/lube-guide2.png",
+    imageSrc: "/const-equipment-guide.webp",
   },
   {
     id: "5",
     title: "H-Duty Tow Trucks Lubrication Guide",
-    imageSrc: "/lube-guide2.png",
+    imageSrc: "/h-duty-guide.webp",
   },
   {
     id: "6",
     title: "Light Duty Diesel Trucks Lubrication Guide",
-    imageSrc: "/lube-guide2.png",
+    imageSrc: "/l-duty-guide.webp",
   },
   {
     id: "7",
     title: "Passenger Cars Lubrication Guide",
-    imageSrc: "/lube-guide2.png",
+    imageSrc: "/cars-guide.webp",
   },
   {
     id: "8",
     title: "School Buses Lubrication Guide",
-    imageSrc: "/lube-guide2.png",
+    imageSrc: "/school-buses-guide.webp",
   },
   {
     id: "9",
     title: "Waste Truck Lubrication Guide",
-    imageSrc: "/lube-guide2.png",
+    imageSrc: "/waste-truck-guide.webp",
   },
   {
     id: "10",
     title: "Wheel Loaders Lubrication Guide",
-    imageSrc: "/lube-guide2.png",
+    imageSrc: "/wheel-loader-guide.webp",
   },
 ];
 

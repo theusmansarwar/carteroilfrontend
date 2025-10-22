@@ -6,6 +6,7 @@
 .services-cards h2 {
   font-size: var(--heading-two);
   text-align: center;
+  text-transform: uppercase;
 }
 .services-cards h2 span {
   color: var(--primary-color);

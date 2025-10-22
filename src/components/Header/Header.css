@@ -41,7 +41,12 @@
 }
 .header-area .left ul li:hover {
   color: var(--primary-color);
-} /* Right */
+}
+.header-links li.active {
+  color: var(--primary-color);
+}
+
+/* Right */
 .header-area .right {
   display: flex;
   align-items: center;
@@ -128,6 +133,10 @@
   border-bottom: 1px solid #eee;
   cursor: pointer;
 }
+.mobile-menu li.active,
+.mobile-link.active {
+  color: var(--primary-color);
+}
 
 /* Mobile Services Dropdown */
 .mobile-services-row {
@@ -139,9 +148,8 @@
 /* Submenu container */
 .mobile-submenu {
   margin-top: 5px;
-  list-style: none; 
+  list-style: none;
 }
-
 
 /* must be placed AFTER */
 .mobile-submenu > li {
@@ -149,10 +157,6 @@
   border-bottom: 1px solid #eee;
   font-size: 14px;
 }
-
-
-
-
 
 .mobile-submenu > li:last-child {
   border-bottom: none;

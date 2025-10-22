@@ -1,0 +1,44 @@
+/* Scoped skeleton loader styles — unique prefix 'ps-skeleton' */
+.ps-skeleton .skeleton-box,
+.ps-skeleton .skeleton-text {
+  background: linear-gradient(90deg, #ddd 25%, #f0f0f0 50%, #ddd 75%);
+  background-size: 200% 100%;
+  animation: ps-skeleton-loading 1.5s infinite;
+  border-radius: var(--border-radius);
+}
+
+@keyframes ps-skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Layout uses same structure as real component */
+.ps-skeleton .each-product .icon-container {
+  height: 210px;
+  width: 100%;
+}
+
+.ps-skeleton .skeleton-text {
+  height: 16px;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.ps-skeleton .skeleton-text.short {
+  width: 60%;
+}
+
+.ps-skeleton .skeleton-text.long {
+  width: 90%;
+}
+
+/* Mobile styles */
+@media (max-width: 900px) {
+  .ps-skeleton .each-product .icon-container {
+    height: 100px;
+  }
+}

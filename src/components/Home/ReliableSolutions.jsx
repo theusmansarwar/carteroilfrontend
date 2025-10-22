@@ -21,7 +21,7 @@ const ReliableSolutions = () => {
             variant="filled"
             color="white"
             onClick={() => {
-              router.push("/contact-us");
+              router.push("/products");
             }}
           >
             Explore Lubricants

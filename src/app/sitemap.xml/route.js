@@ -6,9 +6,12 @@ export async function GET() {
   const baseUrl = "https://carteroilusa.com";
   const staticRoutes = [
     "",
+    "products",
     "about-us",
     "contact-us",
     "history",
+    "lube-guide",
+    "suppliers",
     "terms-and-conditions",
     "privacy-policy",
   ];
@@ -17,7 +20,7 @@ export async function GET() {
   try {
     const res = await fetchProductsSlugs();
     if (res?.slugs && Array.isArray(res.slugs)) {
-      productRoutes = res.slugs.map((product) => `/${product.slug}`);
+      productRoutes = res.slugs.map((product) => `products/${product.slug}`);
     }
   } catch (error) {
     console.error("Error fetching product slugs:", error);

@@ -39,6 +39,7 @@
   font-size: var(--default-p-size);
   margin-bottom: 15px;
   line-height: var(--p-line-height);
+  color: #00000096;
 }
 
 .newsletter-form {
@@ -92,6 +93,7 @@
   font-size: var(--default-p-size);
   line-height: var(--p-line-height);
   margin-top: 10px;
+  color: #000000b2;
 }
 
 .footer-links {

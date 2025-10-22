@@ -7,7 +7,7 @@ export const metadata = {
     "Ready to scale? Get YouTube automation, SEO, social media design, and complete digital marketing services that help your business shine across platforms.",
 };
 const servicesFaqs = {
-  title: "FAQs",
+  title: "Frequently asked Questions",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac suscipit justo. Integer vitae magna et justo porta commodo. Nulla facilisi. Cras faucibus risus at neque dignissim, in varius turpis vestibulum. Nam at eros sem. Curabitur at commodo orci. Sed sagittis nunc ac neque ultrices, in pulvinar massa porttitor.",
   questions: [

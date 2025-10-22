@@ -30,6 +30,7 @@
 .products-services h2 {
   font-size: var(--heading-two);
   text-align: center;
+  text-transform: uppercase;
 }
 .products-services h2 span {
   color: var(--primary-color);

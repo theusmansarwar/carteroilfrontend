@@ -31,12 +31,14 @@
   font-weight: var(--bold-font-weight);
   border-radius: var(--border-radius);
   text-align: center;
+  text-transform: uppercase;
 }
 .historic-legacy .right h2 {
   font-size: var(--heading-two);
   width: 80%;
   text-align: center;
   line-height: var(--heading-line-height);
+  text-transform: uppercase;
 }
 .historic-legacy .right h2 span {
   color: var(--primary-color);

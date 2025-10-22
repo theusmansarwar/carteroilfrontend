@@ -12,7 +12,7 @@ const heroData = [
     title: "Become a Supplier",
     description:
       "Partner with Carteroil USA and join our global network of trusted suppliers. Together, we drive innovation, reliability, and excellence in lubrication solutions.",
-    backgroundImage: "/service-hero.jpg",
+    backgroundImage: "/supplier-hero.webp",
   },
 ];
 const page = () => {
