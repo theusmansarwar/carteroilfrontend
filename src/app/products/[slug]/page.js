@@ -1,7 +1,6 @@
 import Faqs from "@/components/Faqs/Faqs";
 import Benefits from "@/components/ServicePageTemplate/Benefits";
 import BuildingQuality from "@/components/ServicePageTemplate/BuildingQuality";
-import Carousal from "@/components/ServicePageTemplate/Carousal";
 import Performance from "@/components/ServicePageTemplate/Performance";
 import ProductsSection from "@/components/ServicePageTemplate/ProductsSection";
 import ServiceHero from "@/components/ServicePageTemplate/ServiceHero";
@@ -29,6 +28,8 @@ export async function generateMetadata({ params }) {
   const slug = params.slug;
 
   const product = await getProduct(slug);
+  console.log({"ppppppppp":product});
+  
 
   if (!product) {
     return {
@@ -72,10 +73,9 @@ const Page = async ({ params }) => {
       {product.subproducts?.published && (
         <ProductsSection title={product.title} data={product.subproducts} />
       )}
-      {/* <Carousal /> */}
+      
       {product.benefits?.published && <Benefits data={product.benefits} />}
       {product.performance?.published && <Performance data={product.performance} />}
-    
       {product.faqs?.published && <Faqs data={product.faqs} />}
     </div>
   );

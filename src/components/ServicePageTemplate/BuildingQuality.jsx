@@ -1,24 +1,21 @@
 "use client";
 import React from "react";
 import "./BuildingQuality.css";
-import {
-  TiStarFullOutline,
-  TiStarHalfOutline,
-  TiStarOutline,
-} from "react-icons/ti";
 import { FaArrowRight } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
 import { baseUrl } from "@/config/Config";
 
 const BuildingQuality = ({ data }) => {
   const router = useRouter();
+  const resolveImage = (path) =>
+    path?.startsWith("/uploads") ? baseUrl + path : path;
   return (
     <div className="building-quality">
       <div className="buildings-bg"></div>
       <div className="left">
         <div className="top">
           <div className="first">
-            <img src={baseUrl + data.image1} alt="Image" />
+             <img src={resolveImage(data.image1)} alt="Image" />
           </div>
           <div className="second">
             {" "}
@@ -30,7 +27,7 @@ const BuildingQuality = ({ data }) => {
           </div>
         </div>
         <div className="bottom">
-          <img src={baseUrl + data.image2} alt="Image" />
+          <img src={resolveImage(data.image2)} alt="Image" />
         </div>
       </div>
       <div className="right">
@@ -58,23 +55,7 @@ const BuildingQuality = ({ data }) => {
             </button>
           </div>
           <div className="right">
-            <strong>{data.rating}</strong>
-            <div className="stars">
-              {Array.from({ length: 5 }, (_, i) => {
-                const rating = data.rating;
-                if (rating >= i + 1) {
-                  // full star
-                  return <TiStarFullOutline key={i} />;
-                } else if (rating >= i + 0.5) {
-                  // half star
-                  return <TiStarHalfOutline key={i} />;
-                } else {
-                  // empty star
-                  return <TiStarOutline key={i} />;
-                }
-              })}
-            </div>
-            <p>{data.noOfRatings}K Genuine Rating</p>
+            <img src="/api-logo.png" alt="American Petroleum Institute" />
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 const Footer = () => {
   const router = useRouter();
 
-  // 🔹 Object arrays for each section
+  //  Object arrays for each section
   const footerLinks = [
     {
       title: "Company",
@@ -24,17 +24,34 @@ const Footer = () => {
         { name: "Products & Services", path: "/products" },
         { name: "Lube Guide", path: "/lube-guide" },
         { name: "Suppliers", path: "/suppliers" },
+        { name: "Catalogues", path: "/catalogues" },
+      ],
+    },
+    {
+      title: "Equipments & Services",
+      links: [
+        { name: "Equipments", path: "/products/equipments" },
+        { name: "Pipes & Tubing", path: "/products/pipes-and-tubing" },
+        { name: "Oilfield & Gas Services", path: "/products/oilfield-and-gas" },
       ],
     },
     {
       title: "Lubricants",
       links: [
-        { name: "Automotive Lubricants", path: "/products/automotive-lubricants" },
-        { name: "Industrial Lubricants", path: "/products/industrial-lubricants" },
+        {
+          name: "Automotive Lubricants",
+          path: "/products/automotive-lubricants",
+        },
+        {
+          name: "Industrial Lubricants",
+          path: "/products/industrial-lubricants",
+        },
         { name: "Marine Lubricants", path: "/products/marine-lubricants" },
         { name: "Oilfield Lubricants", path: "/products/oilfield-lubricants" },
-        { name: "Equipments", path: "/products/equipments" },
-        { name: "Speciality Lubricants", path: "/products/speciality-lubricants" },
+        {
+          name: "Speciality Lubricants",
+          path: "/products/speciality-lubricants",
+        },
       ],
     },
   ];
@@ -55,9 +72,9 @@ const Footer = () => {
         <div className="left">
           <h3>Subscribe Newsletters</h3>
           <p>
-            Subscribe to our newsletter and unlock a world of exclusive benefits.
-            Be the first to know about our latest products, special promotions,
-            and exciting updates.
+            Subscribe to our newsletter and unlock a world of exclusive
+            benefits. Be the first to know about our latest products, special
+            promotions, and exciting updates.
           </p>
         </div>
         <div className="newsletter-form">

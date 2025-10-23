@@ -3,12 +3,12 @@ import HistoricLegacy from "@/components/Home/HistoricLegacy";
 import HistoryCards from "@/components/Home/HistoryCards";
 import ReliableSolutions from "@/components/Home/ReliableSolutions";
 import Collaborations from "@/components/Home/Collaborations";
-import Testimonials from "@/components/Testimonials/Testimonials";
 import CoreValues from "@/components/Home/CoreValues";
 import OurValues from "@/components/Home/OurValues";
 import Faqs from "@/components/Faqs/Faqs";
 import Hero from "@/components/Home/Hero";
 import Button2 from "@/components/Buttons/Button2";
+import CertifiedProducts from "@/components/Home/CertifiedProducts";
 
 export const metadata = {
   title: "Carter Oil",
@@ -66,8 +66,8 @@ export default function Home() {
         <Button2 label={"Gallery"} />
       </div>
       <Collaborations />
-      <Button2 label={"Testimonials"} />
-      <Testimonials />
+      <Button2 label={"Certified Products"} />
+      <CertifiedProducts/>
       <CoreValues />
       <OurValues />
       <Faqs data={faqs} />

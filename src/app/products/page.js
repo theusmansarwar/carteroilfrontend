@@ -9,52 +9,72 @@ export const metadata = {
 const servicesFaqs = {
   title: "Frequently asked Questions",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac suscipit justo. Integer vitae magna et justo porta commodo. Nulla facilisi. Cras faucibus risus at neque dignissim, in varius turpis vestibulum. Nam at eros sem. Curabitur at commodo orci. Sed sagittis nunc ac neque ultrices, in pulvinar massa porttitor.",
+    "Welcome to the CarterOil FAQs page! Here, you can find answers to common questions about the lubricants, oilfield services, equipment, and operations we provide around the world. Our goal is to help you understand the solutions we offer and support the work of your business.",
   questions: [
     {
-      question: "Lorem ipsum dolor sit amet?",
+      question: "What industries does CarterOil service?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium sem at justo ultricies, a cursus ipsum finibus. Suspendisse id magna euismod, accumsan sapien et, sodales nisi. Integer non elit id leo tincidunt commodo.",
+        "CarterOil offers products for many industries, including automotive, industrial, marine, and specialty. You can find oilfield equipment, racing oils, and complete oilfield services.",
     },
-   
+
     {
-      question: "Donec sagittis lorem ut ligula congue varius?",
+      question:
+        "How can CarterOil provide support for a fleet of older vehicles?",
       answer:
-        "Suspendisse finibus risus non libero euismod, ut tristique massa porta. Cras tincidunt lacus et nisi interdum, nec ultrices sapien porta. Vivamus et mattis lorem, ac vehicula erat.",
-    },
-    {
-      question: "Mauris faucibus risus in libero pharetra aliquet?",
-      answer:
-        "Nam porta libero non luctus luctus. Phasellus a nisi ac urna lacinia dignissim. Etiam accumsan erat sed nulla ullamcorper, nec egestas justo facilisis. Duis nec tincidunt diam.",
+        "Advanced lubricants are needed to improve fuel economy and reduce engine wear. CarterOil's experts can provide recommendations on the best oils and maintenance schedules. Your vehicle will run smoothly, good engine, and reduce your repair costs.",
     },
     {
-      question: "Aenean efficitur elit vel risus imperdiet vehicula?",
+      question: "Are CarterOil's products API compliant?",
       answer:
-        "Proin consequat risus nec ipsum luctus, nec scelerisque enim posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Aenean non turpis ac sem tincidunt rutrum.",
+        "CarterOil lubricants are made to meet the standards of the American Petroleum Institute. You get products that provide good quality, strong performance, and safety for all your equipment.",
     },
     {
-      question: "Vestibulum pharetra neque non enim dignissim euismod?",
+      question: "How do I obtain a quotation for services and products?",
       answer:
-        "Sed blandit lorem ac mi blandit, ac dignissim nulla commodo. Integer a eros eget odio condimentum sagittis. Suspendisse ut magna vel mi pulvinar imperdiet.",
+        "Getting a quote is easy. You can contact CarterOil through the website, phone, and email. Our team will check your needs and suggest the best products and services. Then you will get a clear and detailed quote.",
     },
     {
-      question: "Phasellus ullamcorper metus sit amet turpis tincidunt?",
+      question: "Is CarterOil available internationally?",
       answer:
-        "Cras vitae libero ut massa facilisis viverra. Mauris laoreet metus ut mi iaculis, ut convallis neque tristique. Aenean ac felis eu eros dictum interdum.",
+        "CarterOil serves customers in many countries. You can order products in the Americas, Latin America, and other markets. ",
     },
     {
-      question: "Morbi non tortor vitae arcu viverra malesuada?",
+      question: "How does CarterOil ensure product quality?",
       answer:
-        "Integer id eros vitae erat ullamcorper sagittis. Vestibulum nec mi eget libero porttitor suscipit. Pellentesque euismod, velit sed hendrerit euismod, arcu magna cursus massa, vitae viverra ligula elit vel nisl.",
+        "CarterOil has over 100 years of experience and uses the latest technology in its products. Each product is checked carefully to meet the international standards. It gives the protection, performance, and reliability that all equipment needs.",
     },
     {
-      question: "Praesent at risus nec purus commodo tristique?",
+      question: "How can I choose the right lubricant?",
       answer:
-        "Mauris eu purus ac odio lacinia tincidunt. Suspendisse potenti. Ut vel diam faucibus, bibendum sapien sed, laoreet augue. Etiam vulputate nisl ac nisl aliquet maximus.",
+        "The right lubricant depends on the type of machine, the conditions it works in, and the needs of the operation. CarterOil specialists provide guidance. Providing details about the equipment and its use helps select products that make machines last longer and work better.",
+    },
+    {
+      question: "Does CarterOil provide marine lubricants?",
+      answer:
+        "CarterOil makes marine lubricants for tough conditions at sea. They protect engines from rust, deposits, and wear. It ensures engines remain safe, work well, and last longer even in hard environments.",
+    },
+    {
+      question: "What oilfield services are available?",
+      answer:
+        "CarterOil provides a full range of oilfield services for all types of projects. The services include tubing fabrication, control panel creation, inspections, and equipment rentals. Support is available in both onshore and offshore locations. It helps the operations of your business run smoothly and safely.",
+    },
+    {
+      question: "Can I get technical support for equipment or lubricants?",
+      answer:
+        "CarterOil has a team of specialists ready to help you with technical guidance. They assist with choosing the right products, using them correctly, and making sure they fit your equipment. You can trust the team to solve issues and improve the performance.",
+    },
+    {
+      question: "How long does delivery take?",
+      answer:
+        "Delivery depends on the location and the type of products ordered. The Carter Oil works with logistics partners. The team gives estimated delivery dates and provides updates.",
+    },
+    {
+      question: "Who can I contact for further questions?",
+      answer:
+        "You can reach the team for any questions. They give answers, advice on products, and help with any issues. You get the support needed to keep your equipment and operations running well.",
     },
   ],
 };
-
 
 const page = () => {
   return (

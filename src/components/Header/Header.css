@@ -1,10 +1,6 @@
 .header-area {
-  height: 90px;
+  height: 130px;
   width: 100%;
-  padding: 0 var(--left-space);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,22 +10,58 @@
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.03);
 }
 
-/* Desktop Left */
-.header-area .left {
+/* header-top */
+.header-area .header-top {
+  height: 40px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  background-color: var(--text-color);
+  padding: 0 var(--left-space);
+}
+
+.header-area .header-top a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 14px;
+}
+
+.header-area .header-top a span {
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-area .header-top a span svg {
+  font-size: 12px;
+}
+/* Desktop nav */
+.header-area .main-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 50px;
+  height: 90px;
+  padding: 0 var(--left-space);
 }
 .header-area .logo {
   height: 60px;
   cursor: pointer;
 }
-.header-area .left ul {
+.header-area .main-navbar ul {
   display: flex;
   align-items: center;
   gap: 25px;
 }
-.header-area .left ul li {
+.header-area .main-navbar ul li {
   list-style: none;
   font-size: var(--default-p-size);
   cursor: pointer;
@@ -39,38 +71,26 @@
   gap: 5px;
   transition: color 0.3s ease;
 }
-.header-area .left ul li:hover {
+.header-area .main-navbar .contact-btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  opacity: 0.9;
+}
+.header-area .main-navbar ul li:hover {
   color: var(--primary-color);
 }
 .header-links li.active {
   color: var(--primary-color);
 }
 
-/* Right */
-.header-area .right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.header-area .right a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: var(--primary-color);
-}
-.header-area .right a span {
-  width: 28px;
-  height: 28px;
-  border: 1px solid var(--primary-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.header-area .right a span svg {
-  font-size: 14px;
-}
 .menu-icon {
   display: none;
 }
@@ -78,7 +98,7 @@
   width: 100%;
   height: 450px;
   position: fixed;
-  top: 50px;
+  top: 90px;
   z-index: 60;
   overflow: hidden;
 }
@@ -86,25 +106,48 @@
   display: flex;
   overflow: hidden;
   width: 100%;
-  height: 300px;
+  height: 350px;
 }
 .maindropdown-area .left {
-  width: 15%;
+  width: 25%;
   height: calc(90vh - 111px);
 }
 .maindropdown-area .right {
-  width: 70%;
+  width: 55%;
   height: calc(90vh - 111px);
 }
 .maindropdown-area .center {
   width: 20%;
-  height: 300px;
+  height: 350px;
   padding-top: 40px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--primary-color) transparent;
 }
+/* Equipments dropdown positioning */
+.maindropdown-area.equipments-dropdown .left {
+  width: 38%;
+}
 
+.maindropdown-area.equipments-dropdown .right {
+  width: 42%;
+}
+
+.maindropdown-area.equipments-dropdown .center {
+  width: 20%;
+}
+/* Catalogue dropdown positioning */
+.maindropdown-area.catalogue-dropdown .left {
+  width: 49%;
+}
+
+.maindropdown-area.catalogue-dropdown .right {
+  width: 31%;
+}
+
+.maindropdown-area.catalogue-dropdown .center {
+  width: 20%;
+}
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -150,6 +193,11 @@
   margin-top: 5px;
   list-style: none;
 }
+.mobile-submenu li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /* must be placed AFTER */
 .mobile-submenu > li {
@@ -172,10 +220,19 @@
   .header-area {
     width: 100%;
     height: 70px;
-    padding: 0 15px;
+    padding: 0 5px;
   }
-
-  .header-area .left ul {
+  .header-area .header-top {
+    display: none;
+  }
+  .header-area .main-navbar {
+    justify-content: space-between;
+    height: 70px;
+  }
+  .header-area .main-navbar .contact-btn {
+    display: none;
+  }
+  .header-area .main-navbar ul {
     display: none !important;
   }
 
@@ -190,7 +247,7 @@
     color: var(--primary-color);
   }
 
-  .header-area .right a {
+  .header-area .header-top a {
     display: none;
   }
 }

@@ -1,0 +1,85 @@
+.catalogues {
+  width: 100%;
+  padding: 40px var(--left-space);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.catalogues .catalogue-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 23%;
+}
+.catalogues .catalogue-card .img-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000033;
+  height: 180px;
+  border-radius: 3px;
+}
+.catalogues .catalogue-card .download-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+.catalogues .catalogue-card .download-container .title-cont {
+  background-color: var(--primary-color);
+  min-height: 50px;
+  width: 80%;
+  padding: 0 20px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.catalogues .catalogue-card .download-container h2 {
+  color: var(--secondary-color);
+  font-size: var(--default-p-size);
+  line-height: var(--heading-line-height);
+  text-align: center;
+}
+.catalogues .catalogue-card .download-container .icon {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  min-height: 50px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.catalogues .catalogue-card .download-container .icon:hover a svg {
+  transform: scale(1.08);
+}
+
+.catalogues .catalogue-card .download-container .icon a svg {
+  font-size: 24px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 900px) {
+  .catalogues {
+    padding: 20px var(--left-space);
+  }
+  .catalogues .catalogue-card {
+    width: 48%;
+  }
+}
+@media (max-width: 680px) {
+  .catalogues {
+    padding: 20px var(--left-space);
+  }
+  .catalogues .catalogue-card {
+    width: 100%;
+  }
+}

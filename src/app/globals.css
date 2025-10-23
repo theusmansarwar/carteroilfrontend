@@ -45,7 +45,9 @@ textarea {
   margin-top: 10px;
 }
 button,
-li {
+li,
+a,
+img {
   -webkit-tap-highlight-color: transparent;
 }
 

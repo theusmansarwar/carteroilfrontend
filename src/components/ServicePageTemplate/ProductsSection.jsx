@@ -25,7 +25,7 @@ const ProductsSection = ({ title, data }) => {
         <div className="products-container">
           {data.items.map((item) => (
             <div
-              key={item.id}
+              key={item._id}
               className="product"
               onClick={() => handleOpen(item)}
             >
