@@ -34,7 +34,7 @@ const Carousal = () => {
 
   return (
     <div className="carousal">
-      <h2>Lorem ipsum dolor sit amet</h2>
+      {/* <h2>Lorem ipsum dolor sit amet</h2> */}
       <div className="slider-container">
         {/* Left Sidebar (desktop only) */}
         <div className="sidebar desktop-only">

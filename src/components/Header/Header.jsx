@@ -299,7 +299,10 @@ const Header = () => {
                     <div className="mobile-services-row">
                       <span
                         className={`mobile-link ${isActive ? "active" : ""}`}
-                        onClick={() => setIsLubricantsOpen(!isLubricantsOpen)}
+                        onClick={() => {
+                          router.push("/products");
+                          setMobileMenu(false);
+                        }}
                       >
                         {link.name}
                       </span>
@@ -365,7 +368,10 @@ const Header = () => {
                     <div className="mobile-services-row">
                       <span
                         className={`mobile-link ${isActive ? "active" : ""}`}
-                        onClick={() => setIsCataloguesOpen(!isCataloguesOpen)}
+                        onClick={() => {
+                    router.push("/catalogues");
+                    setMobileMenu(false);
+                  }}
                       >
                         {link.name}
                       </span>
