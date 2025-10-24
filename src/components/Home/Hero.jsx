@@ -29,7 +29,7 @@ const heroData = [
     id: 3,
     image: "/service-hero.jpg",
     title1: "Sustainable",
-    title2: "Energy Solutions",
+    title2: "Energy Innovations",
     desc: "Backed by over a century of innovation and trusted by industries across the globe.",
     btn1: { text: "Learn More", link: "/products" },
     btn2: { text: "Get a Quote", link: "/contact-us" },
