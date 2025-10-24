@@ -78,7 +78,7 @@ const page = () => {
   return (
     <div>
       <Hero2 data={heroData[0]} />
-      <LubeGuidePdf />
+      {/* <LubeGuidePdf /> */}
       <GuideDropDown />
       <Faqs data={faqs} />
     </div>
