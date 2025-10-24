@@ -34,10 +34,6 @@ const Carousal = () => {
 
   return (
     <div className="carousal">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugiat
-        quisquam nulla cum quas dolor vel architecto molestias ipsum eius.
-      </p>
       <h2>Lorem ipsum dolor sit amet</h2>
       <div className="slider-container">
         {/* Left Sidebar (desktop only) */}

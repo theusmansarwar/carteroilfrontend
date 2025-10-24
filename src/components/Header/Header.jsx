@@ -8,6 +8,7 @@ import { usePathname, useRouter } from "next/navigation";
 import ProductsDropDown from "../DropDown/ProductsDropDown";
 import { MdMailOutline } from "react-icons/md";
 import CatalogueDropDown from "../DropDown/CatalogueDropDown";
+import EquipmentsDropDown from "../DropDown/EquipmentsDropDown";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -27,9 +28,9 @@ const lubricants = [
 ];
 
 const equipments = [
-  { name: "Equipments", path: "/equipments" },
+  { name: "Equipments", path: "/products/equipments" },
   { name: "Pipes & Tubing", path: "/pipes-and-tubing" },
-  { name: "Oilfield & Gas Services", path: "/oilfield-and-gas" },
+  { name: "Oilfield & Gas Services", path: "/oil-and-gas-services" },
 ];
 
 const catalouges = [
@@ -40,6 +41,30 @@ const catalouges = [
   {
     name: "Industrial lubrication",
     path: "/Industrial lubrication Catalogue.pdf",
+  },
+  {
+    name: "Marine lubrication",
+    path: "/Marine lubrication Catalogue.pdf",
+  },
+  {
+    name: "OilField Lubrication",
+    path: "/Oilfield lubrication Catalogue.pdf",
+  },
+  {
+    name: "Speciality Lubrication ",
+    path: "/Specialty lubrication Catalogue.pdf",
+  },
+  {
+    name: "Equipments ",
+    path: "/Equipments Catalogue.pdf",
+  },
+  {
+    name: "Pipes & Tubing ",
+    path: "/Tubing & Piping Fabrication Catalogue.pdf",
+  },
+  {
+    name: "Oil & Gas Services",
+    path: "/Oil & Gas Services Catalogue.pdf",
   },
 ];
 
@@ -203,7 +228,7 @@ const Header = () => {
               className="center"
               onMouseEnter={() => setShowEquipmentsDropdown(true)}
             >
-              <ProductsDropDown
+              <EquipmentsDropDown
                 data={equipments.map((item) => ({
                   title: item.name,
                   slug: item.path,
@@ -292,7 +317,7 @@ const Header = () => {
                           <li
                             key={idx}
                             onClick={() => {
-                              router.push(item.path);
+                              router.push(`/products/${item.path}`);
                               setMobileMenu(false);
                             }}
                           >
@@ -353,7 +378,7 @@ const Header = () => {
                     </div>
 
                     {isCataloguesOpen && (
-                      <ul className="mobile-submenu">
+                      <div className="mobile-submenu">
                         {catalouges.map((item, idx) => (
                           <a key={idx} href={item.path} download>
                             {item.name}
@@ -362,7 +387,7 @@ const Header = () => {
                             </span>
                           </a>
                         ))}
-                      </ul>
+                      </div>
                     )}
                   </li>
                 )}

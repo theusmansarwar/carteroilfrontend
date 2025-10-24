@@ -8,9 +8,12 @@ const CertifiedProducts = () => {
         CERTIFIED <span>PRODUCTS</span>
       </h2>
       <p className="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-        voluptates possimus, nesciunt sequi corrupti necessitatibus recusandae
-        in officia et doloremque.
+        CarterOil delivers products that meet the trusted standards of the
+        American Petroleum Institute (API). Each formula is tested for strength,
+        safety, and long-lasting performance. Businesses across the Americas and
+        beyond rely on our certified lubricants and oilfield solutions. The API
+        approval reflects our promise of quality, innovation, and strong
+        partnerships built to last.
       </p>
       <img
         className="api-img"

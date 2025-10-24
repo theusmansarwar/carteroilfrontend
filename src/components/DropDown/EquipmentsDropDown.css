@@ -1,0 +1,33 @@
+.equipment-drop-down {
+  width: 100%;
+  height: fit-content;
+  max-height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) transparent;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.193);
+}
+
+.drop-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.drop-menu-item {
+  padding: 8px 10px;
+  transition: 0.2s ease;
+  color: var(--text-color);
+  border-radius: 4px;
+}
+
+.drop-menu-item:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}

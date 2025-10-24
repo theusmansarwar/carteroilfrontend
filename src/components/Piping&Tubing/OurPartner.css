@@ -9,7 +9,7 @@
 }
 .our-partner .title {
   font-size: var(--heading-two);
-  
+  text-transform: uppercase;
 }
 .our-partner .title span {
   color: var(--primary-color);
@@ -40,7 +40,6 @@
 .our-partner img {
   width: 400px;
   height: auto;
-  
 }
 
 @media (max-width: 900px) {
@@ -52,6 +51,6 @@
     margin-bottom: 15px;
   }
   .our-partner img {
-  width: 60%;
-}
+    width: 60%;
+  }
 }

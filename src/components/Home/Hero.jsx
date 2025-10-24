@@ -9,7 +9,7 @@ import { FaArrowLeft, FaArrowRight, FaChevronLeft, FaChevronRight } from "react-
 const heroData = [
   {
     id: 1,
-    image: "/service-hero.jpg",
+    image: "/home-hero1.webp",
     title1: "Industry-Wide",
     title2: "Lubrication Solutions",
     desc: "Trusted performance built on 125+ years of expertise, innovation, and safety.",
@@ -43,7 +43,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % heroData.length);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 

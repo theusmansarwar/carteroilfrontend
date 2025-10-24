@@ -31,8 +31,8 @@ const Footer = () => {
       title: "Equipments & Services",
       links: [
         { name: "Equipments", path: "/products/equipments" },
-        { name: "Pipes & Tubing", path: "/products/pipes-and-tubing" },
-        { name: "Oilfield & Gas Services", path: "/products/oilfield-and-gas" },
+        { name: "Pipes & Tubing", path: "/pipes-and-tubing" },
+        { name: "Oilfield & Gas Services", path: "/oil-and-gas-services" },
       ],
     },
     {
