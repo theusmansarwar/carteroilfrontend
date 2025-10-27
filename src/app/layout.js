@@ -49,6 +49,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/home-hero1.webp"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/home-hero2.webp"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
