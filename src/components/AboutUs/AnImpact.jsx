@@ -5,7 +5,7 @@ const impactData = [
   {
     id: 1,
     title: "Automotive Solutions",
-    image: "/automotive.svg",
+    image: "/automotive-lubricant.svg",
     description:
       "We design lubricants that protect engines and boost efficiency. Your vehicles run longer and perform better with Carteroil. From personal cars to large fleets, our products keep engines strong and dependable.",
   },

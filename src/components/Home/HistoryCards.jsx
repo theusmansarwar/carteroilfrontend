@@ -22,9 +22,9 @@ const historyData = [
   {
     year: "1970 – 2018",
     title: "Carteroil expands across Latin America",
-    image: "/1970.jpg",
+    image: "/1970.png",
   },
-  // { year: "2019", title: "Carteroil USA Inc.", image: "/carter-oil-logo.svg" },
+  
 ];
 
 const HistoryCards = () => {

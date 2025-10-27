@@ -7,7 +7,7 @@ import Hero2 from "@/components/Hero2/Hero2";
 export const metadata = {
   title: "About Us | Carter Oil",
   description:
-    "Carteroil USA offers 125+ years of lubrication expertise. Trusted solutions for automotive, industrial, and marine sectors with quality and reliability.",
+    "Carter Oil brings over 125 years of lubrication expertise, delivering trusted solutions for automotive, industrial, and marine sectors with unmatched quality and reliability."
 };
 const heroData = [
   {

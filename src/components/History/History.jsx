@@ -42,7 +42,7 @@ const historyData = [
   {
     year: "1970 – 2018",
     title: "Carteroil expands across Latin America",
-    image: "/1970.jpg",
+    image: "/1970.png",
     description:
       "From 1970 to 2018, Carteroil expanded its reach across Latin America. It entered Colombia, Costa Rica, Honduras, Guatemala, and other markets. To serve more customers, the company began producing lubricants in Houston, Texas. It was a smart move that ensured reliable quality and fair prices for both local and global buyers. Production in Houston also gave Carteroil stronger export power and a wider supply chain. Over these decades, the company built a strong reputation for trust and innovation. ",
   },

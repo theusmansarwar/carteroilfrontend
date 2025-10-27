@@ -6,24 +6,24 @@ import Carousal from "@/components/ServicePageTemplate/Carousal";
 import Performance from "@/components/ServicePageTemplate/Performance";
 
 export const metadata = {
-  title: "Oil & Gas Services | Carter Oil",
+  title: "Oil & Gas Services | Reliable and Innovative Energy Solutions",
   description:
-    "Carteroil lubricants protect oil and gas equipment from wear, friction, and corrosion — ensuring reliable performance in extreme conditions.",
+    "Carter Oil lubricants safeguard oil and gas equipment against wear, friction, and corrosion, ensuring reliable performance in the most demanding conditions.",
 };
 const heroData = [
   {
     title: "Oil & Gas Services",
     description:
       "Carteroil provides high-quality lubricants designed to maintain optimal performance of your oil and gas machinery. Our lubricants control your drilling rigs, pumps, compressors, and extraction machinery from the damaging effects of friction, wear, and corrosion. They withstand high pressure and extreme temperature ranges. Carteroil lubricants enable you to carry out your oilfield operations with confidence.",
-    backgroundImage: "/contact-us.webp",
+    backgroundImage: "/oil-and-gas-hero.webp",
   },
 ];
 const innovationData = {
   title: "Optimizing Performance in Every Oilfield Operation",
   description:
     "Carteroil lubricants form a strong protective layer on critical machines. They reduce heat, prevent mechanical wear, and protect against chemical damage. Every product complies with strict oilfield safety regulations. The equipment keeps running without frequent repairs. Operations stay smooth, and downtime stays low.",
-  image1: "/collaboration1.jpg",
-  image2: "/collaboration3.jpg",
+  image1: "/gas-quality1.webp",
+  image2: "/gas-quality2.webp",
   items: [
     "Anti-Friction Protection for Drilling and Pumping Equipment",
     "Corrosion Resistance for Harsh Oilfield Conditions",
@@ -48,10 +48,34 @@ const performance = {
   description:
     "<p>Carteroil products give you reliable solutions for every oil and gas task. They help rigs, pumps, and processing machines run efficiently under tough conditions. Decades of oilfield experience allow Carteroil to make products that meet industry rules. Equipment stays safe, strong, and effective. You protect investments and keep operations moving.</p><p>Now, Trust Carteroil to protect investments and keep operations productive.</p>",
 };
+const sliderData = [
+  {
+    id: 1,
+    image: "/oil1.webp"
+  },
+  {
+    id: 2,
+    image: "/oil2.webp"
+  },
+  {
+    id: 3,
+    image: "/oil3.webp"
+  },
+  {
+    id: 4,
+    image: "/oil4.webp"
+  },
+  {
+    id: 5,
+    image: "/oil5.webp"
+  },
+
+];
 const faqs = {
   title: "Frequently asked Questions",
   description:
     "Carteroil lubricants handle the hardest conditions in oil and gas operations. This section answers questions about protection, durability, high-pressure use, and custom solutions. It guides the engineers, operators, and field managers.",
+  image: "/oil-and-gas-faq.webp",
   questions: [
     {
       question: "Which lubricants work best for high-pressure oilfield tasks?",
@@ -95,7 +119,7 @@ const page = () => {
       <Hero2 data={heroData[0]} />
       <BuildingQuality data={innovationData} />
       <OurPartner data={partnerData} />
-      <Carousal />
+      <Carousal data={sliderData} />
       <Performance data={performance} />
       <Faqs data={faqs} />
     </div>

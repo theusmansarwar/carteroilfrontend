@@ -11,7 +11,7 @@ export async function GET() {
     "contact-us",
     "history",
     "lube-guide",
-    "suppliers",
+    "become-a-supplier",
     "terms-and-conditions",
     "privacy-policy",
   ];

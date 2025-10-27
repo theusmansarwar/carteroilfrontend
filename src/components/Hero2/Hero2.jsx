@@ -6,7 +6,7 @@ const Hero2 = ({ data }) => {
 
   return (
     <div
-      className="hero2"
+      className="second-hero"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundPosition: "center",

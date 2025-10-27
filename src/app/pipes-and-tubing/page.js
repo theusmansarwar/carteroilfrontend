@@ -6,24 +6,24 @@ import Carousal from "@/components/ServicePageTemplate/Carousal";
 import Performance from "@/components/ServicePageTemplate/Performance";
 
 export const metadata = {
-  title: "Piping & Tubing | Carter Oil",
+  title: "Piping & Tubing | Expert Industrial Solutions Partnered with N&J",
   description:
-    "Carteroil offers high-quality pipes and tubings built for durability and resistance to pressure, corrosion, and wear — ensuring reliable performance in every application.",
+    "Carter Oil offers trusted Piping & Tubing services through leading partners like N&J, ensuring quality, precision, and reliability in every project.",
 };
 const heroData = [
   {
     title: "Piping & Tubing",
     description:
       "Premium lubricants crafted to protect piping and tubing systems from friction, pressure, and corrosion while keeping performance stable in every environment.",
-    backgroundImage: "/contact-us.webp",
+    backgroundImage: "/pipes-tubing-hero.webp",
   },
 ];
 const innovationData = {
   title: "Ensuring Flow and Strength in Every System",
   description:
     "CarterOil provides durable solutions for industrial pipelines and tubing networks. Each lubricant forms a strong protective film that prevents rust, leakage, and material fatigue. The formulas maintain smooth movement, reduce maintenance downtime, and ensure system reliability under continuous flow. Every product is tested to meet high safety and performance standards trusted by major industries worldwide.",
-  image1: "/collaboration1.jpg",
-  image2: "/collaboration3.jpg",
+  image1: "/pipe-quality1.webp",
+  image2: "/pipe-quality2.webp",
   items: [
     "Anti-Friction & Anti-Leak Protection",
     "Corrosion Control for Harsh Environments",
@@ -50,11 +50,39 @@ const performance = {
   description:
     "<p>Carteroil tubing and piping solutions bring strength, precision, and long-term reliability to every operation. Each product supports smooth fluid transfer, stable pressure, and consistent performance in demanding environments. You minimize downtime and improve efficiency with components built for endurance and accuracy. Decades of oilfield experience allow Carteroil to deliver products that meet strict quality standards and perform under pressure.</p><p>Trust Carteroil to reinforce your pipeline performance and keep your operations moving forward with confidence.</p>",
 };
+const sliderData = [
+  {
+    id: 1,
+    image:"/pipe1.webp"
+  },
+  {
+    id: 2,
+    image:"/pipe2.webp"
+  },
+  {
+    id: 3,
+   image:"/pipe3.webp"
+  },
+  {
+    id: 4,
+   image:"/pipe4.webp"
+  },
+  {
+    id: 5,
+   image:"/pipe5.webp"
+  },
+  {
+    id: 6,
+   image:"/pipe6.webp"
+  },
+];
+
 const faqs = {
   title: "Frequently asked Questions",
   description:
     "Carteroil tubing and piping are designed for the toughest industrial and oilfield demands. Most performance, durability, corrosion resistance, and custom solution requests are fielded and pioneered. This assists engineers, project managers, and other industry professionals in procuring the right products.",
-  questions: [
+ image:"/pipes-faq.webp",
+    questions: [
     {
       question: "How are leaks minimized in high-pressure tubing systems?",
       answer:
@@ -90,7 +118,7 @@ const page = () => {
       <Hero2 data={heroData[0]} />
       <BuildingQuality data={innovationData} />
       <OurPartner data={partnerData} />
-      <Carousal />
+      <Carousal data={sliderData}/>
       <Performance data={performance} />
       <Faqs data={faqs} />
     </div>

@@ -6,35 +6,21 @@ import {
   FaChevronRight,
 } from "react-icons/fa6";
 
-const sliderData = [
-  {
-    id: 1,
-    image:"/about-us.webp"
-  },
-  {
-    id: 2,
-    image:"/about-us.webp"
-  },
-  {
-    id: 3,
-   image:"/about-us.webp"
-  },
-];
 
-const Carousal = () => {
+const Carousal = ({ data }) => {
   const [current, setCurrent] = useState(0);
 
   const prevSlide = () => {
-    setCurrent((prev) => (prev === 0 ? sliderData.length - 1 : prev - 1));
+    setCurrent((prev) => (prev === 0 ? data.length - 1 : prev - 1));
   };
 
   const nextSlide = () => {
-    setCurrent((prev) => (prev === sliderData.length - 1 ? 0 : prev + 1));
+    setCurrent((prev) => (prev === data.length - 1 ? 0 : prev + 1));
   };
 
   return (
     <div className="carousal">
-      {/* <h2>Lorem ipsum dolor sit amet</h2> */}
+      <h2>Gallery</h2>
       <div className="slider-container">
         {/* Left Sidebar (desktop only) */}
         <div className="sidebar desktop-only">
@@ -49,13 +35,21 @@ const Carousal = () => {
             className="slider-wrapper"
             style={{ transform: `translateX(-${current * 100}%)` }}
           >
-            {sliderData.map((item) => (
-              <div key={item.id} className="slide">
+            {data.map((item) => (
+              <div
+                key={item.id}
+                className="slide"
+                style={{
+                  backgroundImage: `url(${item.image})`,
+                }}
+              >
+                <div className="slide-overlay" />
                 <div className="slide-content">
                   <img src={item.image} alt="" />
                 </div>
               </div>
             ))}
+
           </div>
         </div>
 

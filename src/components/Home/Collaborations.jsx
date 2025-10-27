@@ -19,11 +19,11 @@ const Collaborations = () => {
         {/* Left grid */}
         <div className="left">
           <div className="top">
-            <img src="/collaboration1.jpg" alt="Collaboration" />
-            <img src="/collaboration2.png" alt="Collaboration" />
+            <img src="/collaboration1.webp" alt="Collaboration" />
+            <img src="/collaboration2.webp" alt="Collaboration" />
           </div>
           <div className="bottom">
-            <img src="/collaboration3.jpg" alt="Collaboration" />
+            <img src="/collaboration3.webp" alt="Collaboration" />
           </div>
         </div>
 
@@ -31,7 +31,7 @@ const Collaborations = () => {
         <div
           className="right"
           style={{
-            backgroundImage: "url(/collaboration4.jpg)",
+            backgroundImage: "url(/collaboration4.webp)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",

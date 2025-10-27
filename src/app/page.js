@@ -11,9 +11,9 @@ import Button2 from "@/components/Buttons/Button2";
 import CertifiedProducts from "@/components/Home/CertifiedProducts";
 
 export const metadata = {
-  title: "Carter Oil",
+  title: "Carter Oil | Trusted Oilfield and Industrial Lubrication Solutions",
   description:
-    "Carteroil delivers trusted lubricants and oilfield services worldwide, combining over 125 years of expertise with advanced technology and safety.",
+    "Carter Oil delivers trusted lubricants and oilfield solutions worldwide, backed by 125 years of expertise, innovation, and a commitment to safety.",
 };
 
 const faqs = {

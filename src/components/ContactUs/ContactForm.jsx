@@ -246,7 +246,7 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <div className="info-item">
+        {/* <div className="info-item">
           <div className="icon-circle">
             <FaLocationDot />
           </div>
@@ -254,7 +254,7 @@ const ContactForm = () => {
             <strong>Lorem Ipsum</strong>
             <p>Lorem Has Been Ipsum Has</p>
           </div>
-        </div>
+        </div> */}
 
         <img
           className="contact-logo"

@@ -1,9 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
-import Button from "../Buttons/Button";
 import { useRouter } from "next/navigation";
-import { FaArrowLeft, FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 // Hero Data
 const heroData = [
@@ -18,11 +17,11 @@ const heroData = [
   },
   {
     id: 2,
-    image: "/service-hero.jpg",
+    image: "/home-hero2.webp",
     title1: "Reliable",
     title2: "Oilfield Services",
     desc: "Powering operations worldwide with advanced technology and proven reliability.",
-    btn1: { text: "Our Services", link: "/products" },
+    btn1: { text: "Our Services", link: "/products/equipments" },
     btn2: { text: "Contact Sales", link: "/contact-us" },
   },
   {
@@ -31,7 +30,7 @@ const heroData = [
     title1: "Sustainable",
     title2: "Energy Innovations",
     desc: "Backed by over a century of innovation and trusted by industries across the globe.",
-    btn1: { text: "Learn More", link: "/products" },
+    btn1: { text: "Learn More", link: "/catalogues" },
     btn2: { text: "Get a Quote", link: "/contact-us" },
   },
 ];
@@ -66,13 +65,9 @@ const Hero = () => {
           <div
             key={slide.id}
             className="hero-slide"
-            style={{
-              backgroundImage: `url(${slide.image})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-            }}
+
           >
+            <img className="slide-image" src={slide.image} alt={slide.title1} />
             <div className="hero-content">
               <h1>
                 <span>{slide.title1}</span>
@@ -80,20 +75,18 @@ const Hero = () => {
               </h1>
               <p>{slide.desc}</p>
               <div className="buttons-container">
-                <Button
-                  variant="filled"
-                  color="white"
+                <button
+                className="hero-btn1"
                   onClick={() => router.push(slide.btn1.link)}
                 >
                   {slide.btn1.text}
-                </Button>
-                <Button
-                  variant="outline"
-                  color="black"
+                </button>
+                <button
+                className="hero-btn2"
                   onClick={() => router.push(slide.btn2.link)}
                 >
                   {slide.btn2.text}
-                </Button>
+                </button>
               </div>
             </div>
           </div>

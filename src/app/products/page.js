@@ -4,7 +4,7 @@ import ServicesCards from "@/components/ServicesCards/ServicesCards";
 export const metadata = {
   title: "Products & Services | Carter Oil",
   description:
-    "Ready to scale? Get YouTube automation, SEO, social media design, and complete digital marketing services that help your business shine across platforms.",
+    "From automotive to marine lubricants, Carter Oil delivers high-performance products and expert services that keep your operations running smoothly."
 };
 const servicesFaqs = {
   title: "Frequently asked Questions",

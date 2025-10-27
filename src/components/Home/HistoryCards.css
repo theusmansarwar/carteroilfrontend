@@ -1,25 +1,26 @@
 .history-cards-grid {
   width: 90%;
   margin: 0 auto;
-  padding: 40px var(--left-space);
+  padding: 40px 0;
   background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
-  flex-wrap: wrap; /* all in one line */
-  overflow-x: auto; /* scroll if overflow */
+  gap: 30px;
+  flex-wrap: wrap;
+  overflow-x: auto;
   scroll-behavior: smooth;
 }
 
 .history-cards-grid .history-each-card {
   border-radius: 8px;
   text-align: center;
-  flex: 0 0 160px; /* fixed width for each card */
+  width: 13%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .history-cards-grid .history-each-card .history-title {
@@ -38,26 +39,26 @@
 }
 
 .history-cards-grid .history-each-card .img-cont {
-  border-radius: 8px;
   width: 100%;
-  height: 90px;
+  height: 130px;
   border-radius: 8px;
+  overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2px;
 }
+
+/* Image fills container equally */
 .history-cards-grid .history-each-card img {
-  border-radius: 8px;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   border-radius: 8px;
 }
-.history-cards-grid .history-each-card:last-child img {
-  min-height: 150px;
-}
+
+
+
 /* Responsive */
 @media (max-width: 900px) {
   .history-cards-grid {

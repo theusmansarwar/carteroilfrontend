@@ -7,7 +7,7 @@ import LubeGuidePdf from "@/components/LubeGuide/LubeGuidePdf";
 export const metadata = {
   title: "Lube Guide | Carter Oil",
   description:
-    "Find the right lubricant for your engine or equipment with Carteroil USA’s Lube Guide—expertly crafted for performance and protection.",
+    "Find the perfect lubricant for your engine or equipment with Carteroil USA’s guide, designed for optimal performance and protection."
 };
 const heroData = [
   {

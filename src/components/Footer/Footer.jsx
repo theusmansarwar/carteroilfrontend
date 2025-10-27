@@ -23,7 +23,7 @@ const Footer = () => {
       links: [
         { name: "Products & Services", path: "/products" },
         { name: "Lube Guide", path: "/lube-guide" },
-        { name: "Suppliers", path: "/suppliers" },
+        { name: "Become A Supplier", path: "/become-a-supplier" },
         { name: "Catalogues", path: "/catalogues" },
       ],
     },
@@ -121,11 +121,11 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-          <div className="footer-socials">
+          {/* <div className="footer-socials">
             {socials.map((Icon, index) => (
               <Icon key={index} />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

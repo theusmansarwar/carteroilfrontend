@@ -4,8 +4,7 @@ import Hero2 from "@/components/Hero2/Hero2";
 export const metadata = {
   title: "Contact Us | Carter Oil",
   description:
-    "Contact Carteroil’s team for reliable lubrication solutions and oilfield services designed to improve performance and protect your equipment.",
-};
+    "Connect with Carter Oil’s expert team for dependable lubrication solutions and oilfield services that enhance performance and protect your equipment."};
 const heroData = [
   {
     title: "Contact Us",

@@ -11,7 +11,8 @@ const Faqs = ({ data }) => {
   const toggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-
+  const resolveImage = (path) =>
+    path?.startsWith("/uploads") ? baseUrl + path : path;
   // Normalize API data (support "items" or "questions")
   const questions = data?.questions || data?.items || [];
 
@@ -31,11 +32,12 @@ const Faqs = ({ data }) => {
 
       <p className="faq-description">{data?.description}</p>
       <div className="faq-container">
-        <div className="faq-left">
+        <div className="faq-left-side">
           <img
-            src={data?.image ? baseUrl + data.image : "/faqs.webp"}
+            src={resolveImage(data?.image || "/faqs.webp")}
             alt="FAQs"
           />
+
         </div>
         <div className="faq-right">
           {visibleQuestions.map((item, index) => (

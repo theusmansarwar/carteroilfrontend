@@ -28,7 +28,6 @@ export async function generateMetadata({ params }) {
   const slug = params.slug;
 
   const product = await getProduct(slug);
-  console.log({"ppppppppp":product});
   
 
   if (!product) {
@@ -40,7 +39,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: product.title,
+    title: product.metaTitle,
     description: product.metaDescription,
     icons: { icon: "/favicon.svg" },
   };

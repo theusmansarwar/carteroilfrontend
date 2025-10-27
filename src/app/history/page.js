@@ -4,7 +4,7 @@ import History from "@/components/History/History";
 export const metadata = {
   title: "History | Carter Oil",
   description:
-    "Discover the journey of Carteroil, a trusted name in lubrication services, with a rich history dating back to 1893 and a commitment to innovation.",
+    "Explore the legacy of Carter Oil — a trusted leader in lubrication services since 1893, built on innovation, reliability, and excellence."
 };
 const heroData = [
   {

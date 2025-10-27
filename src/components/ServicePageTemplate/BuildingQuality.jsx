@@ -54,7 +54,7 @@ const BuildingQuality = ({ data }) => {
               </span>
             </button>
           </div>
-          <div className="right">
+          <div className="bottom-right">
             <img src="/api-logo.png" alt="American Petroleum Institute" />
           </div>
         </div>
