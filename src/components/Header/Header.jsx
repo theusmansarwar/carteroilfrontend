@@ -36,35 +36,35 @@ const equipments = [
 const catalouges = [
   {
     name: "Automotive lubrication",
-    path: "/Automotive lubrication Catalogue.pdf",
+    path: "/Automotive-lubrication-Catalogue.pdf",
   },
   {
     name: "Industrial lubrication",
-    path: "/Industrial lubrication Catalogue.pdf",
+    path: "/Industrial-lubrication-Catalogue.pdf",
   },
   {
     name: "Marine lubrication",
-    path: "/Marine lubrication Catalogue.pdf",
+    path: "/Marine-lubrication-Catalogue.pdf",
   },
   {
     name: "OilField Lubrication",
-    path: "/Oilfield lubrication Catalogue.pdf",
+    path: "/Oilfield-lubrication-Catalogue.pdf",
   },
   {
     name: "Speciality Lubrication ",
-    path: "/Specialty lubrication Catalogue.pdf",
+    path: "/Specialty-lubrication-Catalogue.pdf",
   },
   {
     name: "Equipments ",
-    path: "/Equipments Catalogue.pdf",
+    path: "/Equipments-Catalogue.pdf",
   },
   {
     name: "Pipes & Tubing ",
-    path: "/Tubing & Piping Fabrication Catalogue.pdf",
+    path: "/Tubing-Piping-Fabrication-Catalogue.pdf",
   },
   {
     name: "Oil & Gas Services",
-    path: "/Oil & Gas Services Catalogue.pdf",
+    path: "/Oil-Gas-Services-Catalogue.pdf",
   },
 ];
 
