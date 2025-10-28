@@ -15,7 +15,6 @@ import { BiFirstPage, BiLastPage } from "react-icons/bi";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { fetchAllProducts } from "@/DAL/Fetch";
 import { useRouter } from "next/navigation";
-import Button2 from "../Buttons/Button2";
 import ServicesSkeleton from "../SkeletonLoaders/ServicesSkeleton";
 import { baseUrl } from "@/config/Config";
 
@@ -68,9 +67,9 @@ const ServicesCards = () => {
             {services.map((service) => (
               <React.Fragment key={service._id}>
                 <div className="service-card">
-                 <div className="icon-container">
-                   <img src={baseUrl + service.icon} className="service-icon" />
-                 </div>
+                  <div className="icon-container">
+                    <img src={baseUrl + service.icon} className="service-icon" />
+                  </div>
                   <h3>{service.title}</h3>
                   <p>{truncateTextByWords(service.short_description, 25)}</p>
                   <span
@@ -93,7 +92,11 @@ const ServicesCards = () => {
               spacing={2}
               alignItems="center"
               justifyContent="space-between"
-              sx={{ mt: 3 }}
+              sx={{
+                mt: 3,
+                width: { xs: "100%", sm: "90%" }, //  100% on mobile, 80% on desktop
+                mx: "auto", // center horizontally
+              }}
             >
               {/* Range Text */}
               <Typography>
@@ -128,13 +131,13 @@ const ServicesCards = () => {
                     color: "#fff",
                   },
                   "& .MuiPaginationItem-root.MuiPaginationItem-previousNext, & .MuiPaginationItem-root.MuiPaginationItem-firstLast":
-                    {
-                      backgroundColor: "var(--primary-color)",
-                      color: "#fff",
-                      "&:hover": {
-                        backgroundColor: "#ec9615ff",
-                      },
+                  {
+                    backgroundColor: "var(--primary-color)",
+                    color: "#fff",
+                    "&:hover": {
+                      backgroundColor: "#ec9615ff",
                     },
+                  },
                 }}
               />
 

@@ -61,32 +61,15 @@ const Footer = () => {
     { name: "Privacy Policy", path: "/privacy-policy" },
   ];
 
-  const socials = [FaFacebookF, FaTwitter, FaVimeoV, FaYoutube];
+  // const socials = [FaFacebookF, FaTwitter, FaVimeoV, FaYoutube];
 
   return (
     <footer className="footer">
       <div className="black-area"></div>
-
-      {/* Newsletter Section */}
-      <div className="newsletter">
-        <div className="left">
-          <h3>Subscribe Newsletters</h3>
-          <p>
-            Subscribe to our newsletter and unlock a world of exclusive
-            benefits. Be the first to know about our latest products, special
-            promotions, and exciting updates.
-          </p>
-        </div>
-        <div className="newsletter-form">
-          <input type="email" placeholder="Enter Your Email" />
-          <button>SUBSCRIBE NOW</button>
-        </div>
-      </div>
-
       {/* Footer Content */}
       <div className="footer-main">
         <div className="footer-logo-area">
-          <img src="/carter-oil-logo.svg" alt="Carter Oil" />
+          <img src="/carteroil-w.svg" alt="Carter Oil" />
           <p>
             Carter Oil USA delivers premium lubricants and equipment solutions,
             ensuring performance, reliability, and smooth operations worldwide.

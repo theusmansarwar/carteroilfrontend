@@ -8,7 +8,7 @@ const Button2 = ({ label, data = [], onClick }) => {
         className={`blog-btn ${onClick ? "clickable" : ""}`}
         onClick={onClick ? onClick : undefined}
       >
-        <img src="/btn-icon.svg" alt="icon" className="icon" />
+        <img src="/carteroil-b.svg" alt="icon" className="icon" />
         {label}
       </button>
 

@@ -7,50 +7,50 @@ const Catalogues = () => {
     {
       id: 1,
       title: "Automotive Lubrication Catalogue",
-      image: "/automotive-pdf.png",
+      image: "/automotive-pdf.webp",
       file: "/Automotive lubrication Catalogue.pdf",
     },
     {
       id: 2,
       title: "Industrial Lubrication Catalogue",
-      image: "/industrial-pdf.png",
+      image: "/industrial-pdf.webp",
       file: "/Industrial lubrication Catalogue.pdf",
     },
     {
       id: 3,
       title: "Marine Lubrication Catalogue",
-      image: "/marine-pdf.png",
+      image: "/marine-pdf.webp",
       file: "/Marine lubrication Catalogue.pdf",
     },
 
     {
       id: 4,
       title: "Oilfield Lubrication Catalogue",
-      image: "/oilfield-pdf.png",
+      image: "/oilfield-pdf.webp",
       file: "/Oilfield lubrication Catalogue.pdf",
     },
     {
       id: 5,
       title: "Speciality Lubrication Catalogue",
-      image: "/specialty-pdf.png",
+      image: "/specialty-pdf.webp",
       file: "/Specialty lubrication Catalogue.pdf",
     },
     {
       id: 6,
       title: "Equipments Catalogue",
-      image: "/equipments-pdf.png",
+      image: "/equipments-pdf.webp",
       file: "/Equipments Catalogue.pdf",
     },
     {
       id: 7,
       title: "Pipes & Tubing Catalogue",
-      image: "/tubing-pdf.png",
+      image: "/tubing-pdf.webp",
       file: "/Tubing & Piping Fabrication Catalogue.pdf",
     },
     {
       id: 8,
       title: "Oilfield & Gas Services Catalogue",
-      image: "/oil-gas-pdf.png",
+      image: "/oil-gas-pdf.webp",
       file: "/Oil & Gas Services Catalogue.pdf",
     },
   ];
