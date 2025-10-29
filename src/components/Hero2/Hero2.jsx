@@ -16,7 +16,7 @@ const Hero2 = ({ data }) => {
     >
       <div className="overlay">
         <h1>{title}</h1>
-        <p>{description}</p>
+         <p className="dangerously-set-data" dangerouslySetInnerHTML={{ __html: description || "" }} />
       </div>
     </div>
   );

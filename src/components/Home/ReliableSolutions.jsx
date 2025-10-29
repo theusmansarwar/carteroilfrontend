@@ -14,7 +14,7 @@ const ReliableSolutions = () => {
           Reliable <span>Solutions</span>, Ready for You
         </h2>
         <p>
-          Looking for reliable lubrication solutions backed by more than a century of expertise? Carter Oil’s specialists are ready to provide tailored recommendations to keep your equipment running at peak performance. Contact our experts today to discover the right products and services for your industry.
+          Looking for reliable <a href="https://carteroilusa.com/products">lubrication solutions</a> backed by more than a century of expertise? Carter Oil’s specialists are ready to provide tailored recommendations to keep your <a href="https://carteroilusa.com/products/equipment">equipment</a> running at peak performance. Contact our experts today to discover the right products and services for your industry.
         </p>
         <div className="buttons-container">
           <Button

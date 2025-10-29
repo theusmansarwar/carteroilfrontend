@@ -2,7 +2,7 @@ import PrivacyPolicy from "@/components/ExtraPages/PrivacyPolicy";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "Privacy Policy | Carter Oil",
+  title: "Privacy Policy",
   description:
     "Discover how Carter Oil USA protects your personal data and keeps your information secure. We value your privacy and are committed to transparency, safety, and trust at every step.",
 };

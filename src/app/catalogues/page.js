@@ -2,7 +2,7 @@ import Catalogues from "@/components/Catalogues/Catalogues";
 import Hero2 from "@/components/Hero2/Hero2";
 
 export const metadata = {
-  title: "Catalogues | Carter Oil",
+  title: "Catalogues",
   description:
     "Contact Carteroil’s team for reliable lubrication solutions and oilfield services designed to improve performance and protect your equipment.",
 };

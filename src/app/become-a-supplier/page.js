@@ -3,7 +3,7 @@ import Hero2 from "@/components/Hero2/Hero2";
 import Supplier from "@/components/Supplier/Supplier";
 
 export const metadata = {
-  title: "Become A Supplier | Carter Oil",
+  title: "Become A Supplier",
   description:
     "Partner with Carteroil USA, a trusted supplier of premium lubricants. Join our network and grow your business with reliable solutions"
 };

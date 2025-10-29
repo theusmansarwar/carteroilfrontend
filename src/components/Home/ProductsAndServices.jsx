@@ -37,7 +37,7 @@ const ProductsAndServices = () => {
         Carter Oil <span>Products & Services</span>
       </h2>
       <p>
-        Carteroil delivers trusted oilfield services built on decades of
+        Carteroil delivers trusted oilfield <a href="https://carteroilusa.com/oil-and-gas-services">services</a> built on decades of
         expertise. We support governments, operators, and industrial companies
         across land, subsea, and marine projects. Every service is engineered
         with advanced technology and delivered under the highest safety

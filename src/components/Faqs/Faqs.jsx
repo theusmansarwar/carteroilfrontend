@@ -29,8 +29,7 @@ const Faqs = ({ data }) => {
           {data?.title?.split(" ").slice(-1)}
         </span>
       </h2>
-
-      <p className="faq-description">{data?.description}</p>
+      <p className="faq-description" dangerouslySetInnerHTML={{ __html: data.description || "" }}  />
       <div className="faq-container">
         <div className="faq-left-side">
           <img

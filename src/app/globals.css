@@ -20,6 +20,7 @@
   --heading-line-height: 1.2;
   --gradient-one: linear-gradient(90deg, var(--primary-color), #2b1d07);
 }
+
 * {
   padding: 0%;
   margin: 0%;
@@ -44,25 +45,30 @@ textarea {
   gap: 20px;
   margin-top: 10px;
 }
+
 button,
 li,
 a,
 img {
   -webkit-tap-highlight-color: transparent;
 }
-.dangerously-set-data{
+
+.dangerously-set-data {
   font-size: var(--default-p-size);
 }
-.dangerously-set-data a{
+
+a {
   color: var(--primary-color);
 }
-.dangerously-set-data ul{
+
+.dangerously-set-data ul {
   margin: 0%;
   padding: 0%;
 }
-.dangerously-set-data ul li{
-display: flex;
-align-items: center;
+
+.dangerously-set-data ul li {
+  display: flex;
+  align-items: center;
 
 
 }

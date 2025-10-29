@@ -15,7 +15,7 @@ const CoreValues = ({ data }) => {
         long-term success. The company focuses on quality because reliable
         solutions keep your business moving. Over the years, strong values
         shaped every decision. Carteroil grew from making premium lubricants to
-        offering trusted oilfield services. You can depend on the company to
+        offering trusted <a href="https://carteroilusa.com/oil-and-gas-services">oilfield services</a>. You can depend on the company to
         join tradition and modern expertise in a way that protects equipment,
         reduces downtime, and builds lasting partnerships across the world.
       </p>

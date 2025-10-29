@@ -2,7 +2,7 @@ import ContactForm from "@/components/ContactUs/ContactForm";
 import Hero2 from "@/components/Hero2/Hero2";
 
 export const metadata = {
-  title: "Contact Us | Carter Oil",
+  title: "Contact Us",
   description:
     "Connect with Carter Oil’s expert team for dependable lubrication solutions and oilfield services that enhance performance and protect your equipment."};
 const heroData = [

@@ -21,7 +21,7 @@ const heroData = [
 const innovationData = {
   title: "Ensuring Flow and Strength in Every System",
   description:
-    "CarterOil provides durable solutions for industrial pipelines and tubing networks. Each lubricant forms a strong protective film that prevents rust, leakage, and material fatigue. The formulas maintain smooth movement, reduce maintenance downtime, and ensure system reliability under continuous flow. Every product is tested to meet high safety and performance standards trusted by major industries worldwide.",
+    "CarterOil provides durable solutions for <a href=https://carteroilusa.com/products/equipment> industrial pipelines</a> and tubing networks. Each <a href=https://carteroilusa.com/products/speciality-lubricants> Lubricant</a> forms a strong protective film that prevents rust, leakage, and material fatigue. The formulas maintain smooth movement, reduce <a href=https://carteroilusa.com/products/oilfield-lubricants> maintenance downtime</a>, and ensure system reliability under continuous flow. Every product is tested to meet high <a href=https://carteroilusa.com/about-us> safety and performance standards</a> trusted by major industries worldwide.",
   image1: "/pipe-quality1.webp",
   image2: "/pipe-quality2.webp",
   items: [
@@ -34,12 +34,15 @@ const innovationData = {
 };
 const partnerData = [
   {
-    descriptions: [
-      "Carteroil builds strength through collaboration. Our partnership with NJ Oilfield Services extends our reach in tubing, piping, and fabrication solutions. Together, we deliver precision-engineered systems that meet international oilfield standards and ensure reliable performance across operations.",
-      "NJ Oilfield Services brings years of field experience and modern manufacturing expertise. Its advanced facilities produce high-quality tubing and piping assemblies for drilling, extraction, and production. Each component passes strict testing to guarantee durability and performance under extreme pressure.",
-      "Carteroil offers complete support with design, fabrication, inspection, and installation. Each project takes advantage of the combined expertise, innovative equipment.",
-      "Your trust fuels our ambition. We are committed to expanding our capabilities. It improves the safety of our operations and creates the infrastructure that services the global energy sector. Together, we enhance mission reliability and durability.",
-    ],
+    description: `
+  <p>Carteroil builds strength through collaboration. Our partnership with NJ Oilfield Services extends our reach in tubing, piping, and fabrication solutions. Together, we deliver precision-engineered systems that meet international oilfield standards and ensure reliable performance across operations.</p>
+  
+  <p>NJ Oilfield Services brings years of field experience and modern manufacturing expertise. Its advanced facilities produce high-quality tubing and piping assemblies for <a href="https://carteroilusa.com/oil-and-gas-services" >drilling, extraction, and production</a>. Each component passes strict testing to guarantee durability and performance under extreme pressure.</p>
+  
+  <p>Carteroil offers complete support with design, fabrication, inspection, and installation. Each project takes advantage of the combined expertise and innovative equipment.</p>
+  
+  <p>Your trust fuels our ambition. We are committed to expanding our capabilities — improving operational safety and creating infrastructure that serves the global energy sector. Together, we enhance mission reliability and durability.</p>
+`,
     image: "/nj.svg",
     title: "OUR PARTNERS IN",
     subtitle: "PIPES & TUBING",
@@ -53,27 +56,27 @@ const performance = {
 const sliderData = [
   {
     id: 1,
-    image:"/pipe1.webp"
+    image: "/pipe1.webp"
   },
   {
     id: 2,
-    image:"/pipe2.webp"
+    image: "/pipe2.webp"
   },
   {
     id: 3,
-   image:"/pipe3.webp"
+    image: "/pipe3.webp"
   },
   {
     id: 4,
-   image:"/pipe4.webp"
+    image: "/pipe4.webp"
   },
   {
     id: 5,
-   image:"/pipe5.webp"
+    image: "/pipe5.webp"
   },
   {
     id: 6,
-   image:"/pipe6.webp"
+    image: "/pipe6.webp"
   },
 ];
 
@@ -81,8 +84,8 @@ const faqs = {
   title: "Frequently asked Questions",
   description:
     "Carteroil tubing and piping are designed for the toughest industrial and oilfield demands. Most performance, durability, corrosion resistance, and custom solution requests are fielded and pioneered. This assists engineers, project managers, and other industry professionals in procuring the right products.",
- image:"/pipes-faq.webp",
-    questions: [
+  image: "/pipes-faq.webp",
+  questions: [
     {
       question: "How are leaks minimized in high-pressure tubing systems?",
       answer:
@@ -108,7 +111,7 @@ const faqs = {
       answer:
         "Every piece of piping and tubing is tested for durability and structural integrity. They are designed to be resistant to rust, corrosion, and even extreme salty marine conditions. Therefore, long-term safety is assured.",
     },
-    
+
   ],
 };
 
@@ -118,7 +121,7 @@ const page = () => {
       <Hero2 data={heroData[0]} />
       <BuildingQuality data={innovationData} />
       <OurPartner data={partnerData} />
-      <Carousal data={sliderData}/>
+      <Carousal data={sliderData} />
       <Performance data={performance} />
       <Faqs data={faqs} />
     </div>

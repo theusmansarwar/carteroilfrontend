@@ -10,9 +10,9 @@ const Partnering = () => {
         <h2>Partnering for Your Success</h2>
         <p>
           We believe in partnerships that last. At Carteroil, your success
-          defines ours. We stand beside you to make sure our lubricants improve
-          your operations and cut downtime. You get solutions that keep your
-          equipment reliable and efficient. You may need stronger machinery,
+          defines ours. We stand beside you to make sure our lubricants <a href="https://carteroilusa.com/products/equipment">improve
+            your operations and cut downtime</a>. You get solutions that <a href="https://carteroilusa.com/pipes-and-tubing">keep your
+              equipment reliable and efficient</a>. You may need stronger machinery,
           longer product life, or a supplier you can always trust. Our
           lubricants keep your machines running at their best. You can focus on
           progress, knowing Carteroil delivers the quality that drives success.

@@ -14,14 +14,14 @@ const heroData = [
   {
     title: "Oil & Gas Services",
     description:
-      "Carteroil provides high-quality lubricants designed to maintain optimal performance of your oil and gas machinery. Our lubricants control your drilling rigs, pumps, compressors, and extraction machinery from the damaging effects of friction, wear, and corrosion. They withstand high pressure and extreme temperature ranges. Carteroil lubricants enable you to carry out your oilfield operations with confidence.",
+      "Carteroil provides <a href=https://carteroilusa.com/products/industrial-lubricants> high-quality lubricants</a> designed to maintain optimal performance of your oil and gas machinery. Our lubricants control your drilling rigs, pumps, compressors, and extraction machinery from the damaging effects of friction, wear, and corrosion. They withstand high pressure and extreme temperature ranges. Carteroil lubricants enable you to carry out your oilfield operations with confidence.",
     backgroundImage: "/oil-and-gas-hero.webp",
   },
 ];
 const innovationData = {
   title: "Optimizing Performance in Every Oilfield Operation",
   description:
-    "Carteroil lubricants form a strong protective layer on critical machines. They reduce heat, prevent mechanical wear, and protect against chemical damage. Every product complies with strict oilfield safety regulations. The equipment keeps running without frequent repairs. Operations stay smooth, and downtime stays low.",
+    "Carteroil lubricants form a strong protective layer on <a href=https://carteroilusa.com/products/speciality-lubricants> critical machines</a>. They reduce heat, prevent mechanical wear, and protect against chemical damage. Every product complies with strict oilfield safety regulations. The equipment keeps running without frequent repairs. Operations stay smooth, and downtime stays low.",
   image1: "/gas-quality1.webp",
   image2: "/gas-quality2.webp",
   items: [
@@ -34,14 +34,14 @@ const innovationData = {
 };
 const partnerData = [
   {
-    descriptions: [
-      "Carteroil believes strength grows through the right partnerships. Our collaboration with AORS brings expertise, innovation, and commitment to every stage of oilfield and gas operations. Together, we deliver dependable solutions that meet the high demands of modern energy production",
-      "AORS adds value through strong technical knowledge and deep field experience. Its support extends across drilling, extraction, and maintenance projects. Each operation benefits from advanced tools and proven methods that keep performance consistent under pressure.",
-      "Carteroil works closely with AORS to improve reliability and reduce risks in complex environments. The partnership reflects shared goals of safe operations, durable results, and lasting client trust.",
-    ],
+    description: `
+      <p>Carteroil believes strength grows through the right <a href=https://carteroilusa.com/about-us> partnerships</a>. Our collaboration with AORS brings expertise, innovation, and commitment to every stage of oilfield and gas operations. Together, we deliver dependable solutions that meet the high demands of modern energy production</p>
+      <p>AORS adds value through strong technical knowledge and deep field experience. Its support extends across drilling, extraction, and maintenance projects. Each operation benefits from advanced tools and proven methods that keep performance consistent under pressure.</p>
+     <p>Carteroil works closely with AORS to improve reliability and reduce risks in complex environments. The partnership reflects shared goals of safe operations, durable results, and lasting client trust.</p>
+    `,
     title: "Oil & Gas",
     subtitle: "Services",
-    image:'/aors.png'
+    image: '/aors.png'
   },
 ];
 const performance = {

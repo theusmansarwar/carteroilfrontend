@@ -10,11 +10,9 @@ const OurPartner = ({ data }) => {
             <span>{partner.title}</span> {partner.subtitle}
           </h2>
 
-          {partner.descriptions.map((text, i) => (
-            <p key={i}>{text}</p>
-          ))}
+          <div dangerouslySetInnerHTML={{ __html: partner.description || "" }} />
 
-             {/* Only show image if available */}
+          {/* Only show image if available */}
           {partner.image && partner.image.trim() !== "" && (
             <img src={partner.image} alt={partner.subtitle} />
           )}

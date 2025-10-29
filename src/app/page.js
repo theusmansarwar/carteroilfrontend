@@ -19,7 +19,7 @@ export const metadata = {
 const faqs = {
   title: "Frequently asked Questions",
   description:
-    "Find quick answers to common questions about Carteroil’s products, services, and global operations. Learn how our lubricants and oilfield solutions can support your business with proven reliability and performance.",
+    "Find quick answers to common questions about Carteroil’s products, services, and global operations. <a href=https://carteroilusa.com/catalogues> Learn how our lubricants and oilfield solutions can support your business</a> with proven reliability and performance.",
   questions: [
     {
       question: "What does Carteroil offer?",

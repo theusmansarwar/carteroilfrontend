@@ -2,7 +2,7 @@ import Hero2 from "@/components/Hero2/Hero2";
 import History from "@/components/History/History";
 
 export const metadata = {
-  title: "History | Carter Oil",
+  title: "History",
   description:
     "Explore the legacy of Carter Oil — a trusted leader in lubrication services since 1893, built on innovation, reliability, and excellence."
 };

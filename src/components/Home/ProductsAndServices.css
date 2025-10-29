@@ -40,6 +40,9 @@
   line-height: var(--p-line-height);
   text-align: center;
 }
+.products-services p a {
+  color: var(--primary-color);
+}
 .products-services .products-container {
   display: flex;
   flex-wrap: wrap;

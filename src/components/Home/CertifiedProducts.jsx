@@ -11,7 +11,7 @@ const CertifiedProducts = () => {
         CarterOil delivers products that meet the trusted standards of the
         American Petroleum Institute (API). Each formula is tested for strength,
         safety, and long-lasting performance. Businesses across the Americas and
-        beyond rely on our certified lubricants and oilfield solutions. The API
+        beyond rely on our certified lubricants and <a href="https://carteroilusa.com/products/oilfield-lubricants">oilfield solutions</a>. The API
         approval reflects our promise of quality, innovation, and strong
         partnerships built to last.
       </p>
