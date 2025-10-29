@@ -35,9 +35,9 @@ const innovationData = {
 const partnerData = [
   {
     descriptions: [
-      "Carteroil delivers trusted oilfield and gas services that keep your operations steady. You get support in drilling, extraction, and production without delays. Each solution protects your machines and improves system strength.",
-      "Our lubricants reduce friction, control heat, and prevent wear under heavy pressure. You gain better performance and fewer breakdowns. Every product goes through strict checks to ensure lasting reliability. Our team understands field challenges and harsh site conditions. They bring years of hands-on experience to every job. You receive help that keeps your equipment ready for any test.",
-      "Carteroil focuses on safety, speed, and performance. Each service improves your output and cuts downtime. You get dependable support from start to finish. We continue to upgrade our oilfield and gas services to meet modern demands. The goal stays clear. You deserve safer, stronger, and more efficient operations. Carteroil helps you achieve that every day.",
+      "Carteroil believes strength grows through the right partnerships. Our collaboration with AORS brings expertise, innovation, and commitment to every stage of oilfield and gas operations. Together, we deliver dependable solutions that meet the high demands of modern energy production",
+      "AORS adds value through strong technical knowledge and deep field experience. Its support extends across drilling, extraction, and maintenance projects. Each operation benefits from advanced tools and proven methods that keep performance consistent under pressure.",
+      "Carteroil works closely with AORS to improve reliability and reduce risks in complex environments. The partnership reflects shared goals of safe operations, durable results, and lasting client trust.",
     ],
     title: "Oil & Gas",
     subtitle: "Services",
