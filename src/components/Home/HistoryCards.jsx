@@ -24,6 +24,11 @@ const historyData = [
     title: "Carteroil expands across Latin America",
     image: "/1970.png",
   },
+  {
+    year: "2019",
+    title: "Carteroil expands across Latin America",
+    image: "/carter-oil-logo.svg",
+  },
   
 ];
 
