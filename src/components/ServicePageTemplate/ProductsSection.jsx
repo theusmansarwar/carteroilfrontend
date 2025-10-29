@@ -20,7 +20,7 @@ const ProductsSection = ({ title, data }) => {
   return (
     <div className="products-section">
       <div className="inside">
-        <p>{data.description}</p>
+         <p className="dangerously-set-data" dangerouslySetInnerHTML={{ __html: data.description || "" }} />
         <h2>{title}</h2>
         <div className="products-container">
           {data.items.map((item) => (
