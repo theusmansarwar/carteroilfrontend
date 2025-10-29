@@ -26,8 +26,8 @@ const historyData = [
   },
   {
     year: "2019",
-    title: "Carteroil expands across Latin America",
-    image: "/carter-oil-logo.svg",
+    title: "Carteroil’s Legacy of Innovation",
+    image: "/CarterOil.jpg",
   },
   
 ];
