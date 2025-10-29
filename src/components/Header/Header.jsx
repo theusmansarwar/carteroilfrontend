@@ -28,7 +28,7 @@ const lubricants = [
 ];
 
 const equipments = [
-  { name: "Equipments", path: "/products/equipments" },
+  { name: "Equipment", path: "/products/equipment" },
   { name: "Pipes & Tubing", path: "/pipes-and-tubing" },
   { name: "Oilfield & Gas Services", path: "/oil-and-gas-services" },
 ];

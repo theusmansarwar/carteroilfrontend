@@ -8,7 +8,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 const heroData = [
   {
     id: 1,
-    image: "/home-hero1.webp",
+    image: "/home-hero2.webp",
     title1: "Industry-Wide",
     title2: "Lubrication Solutions",
     desc: "Trusted performance built on 125+ years of expertise, innovation, and safety.",
@@ -17,7 +17,7 @@ const heroData = [
   },
   {
     id: 2,
-    image: "/home-hero2.webp",
+    image: "/home-hero1.webp",
     title1: "Reliable",
     title2: "Oilfield Services",
     desc: "Powering operations worldwide with advanced technology and proven reliability.",

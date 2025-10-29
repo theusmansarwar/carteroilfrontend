@@ -8,7 +8,7 @@ const Performance = ({ data }) => {
     <div className="performance">
       <h2>{data.title}</h2>
       <div
-        className="performance-description"
+        className="performance-description dangerously-set-data"
         dangerouslySetInnerHTML={{ __html: data?.description || "" }}
       />
       <button

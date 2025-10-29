@@ -32,7 +32,7 @@ const BuildingQuality = ({ data }) => {
       </div>
       <div className="right">
         <h2>{data.title}</h2>
-        <p>{data.description}</p>
+       <div className="dangerously-set-data" dangerouslySetInnerHTML={{ __html: data.description || "" }} />
         <div className="bottom">
           <div className="left">
             <ul>

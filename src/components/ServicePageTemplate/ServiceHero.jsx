@@ -20,7 +20,7 @@ const ServiceHero = ({ data }) => {
         <h1>
           <span>{words[0]}</span> {words.slice(1).join(" ")}
         </h1>
-        <p>{description}</p>
+        <div className="dangerously-set-data" dangerouslySetInnerHTML={{ __html: description || "" }} />
       </div>
     </div>
   );

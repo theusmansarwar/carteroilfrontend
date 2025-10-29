@@ -12,14 +12,11 @@ const Benefits = ({ data }) => {
         <h2>
           Features / <span>Benefits</span>
         </h2>
-        <div
-          className="benefits-description"
-          dangerouslySetInnerHTML={{ __html: data?.description || "" }}
-        />
+        <div className="dangerously-set-data" dangerouslySetInnerHTML={{ __html: data.description || "" }} />
         <ul>
           {data.items.map((item, index) => (
             <li key={index}>
-              <strong>{item.title}:</strong> {item.description}
+              <strong>{item.title}:</strong> <span className="dangerously-set-data" dangerouslySetInnerHTML={{ __html: item.description || "" }} />
             </li>
           ))}
         </ul>

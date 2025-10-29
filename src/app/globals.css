@@ -50,6 +50,22 @@ a,
 img {
   -webkit-tap-highlight-color: transparent;
 }
+.dangerously-set-data{
+  font-size: var(--default-p-size);
+}
+.dangerously-set-data a{
+  color: var(--primary-color);
+}
+.dangerously-set-data ul{
+  margin: 0%;
+  padding: 0%;
+}
+.dangerously-set-data ul li{
+display: flex;
+align-items: center;
+
+
+}
 
 @media (max-width: 900px) {
   :root {
