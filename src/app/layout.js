@@ -4,7 +4,6 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import { ToastContainer } from "react-toastify";
 import ViewCounter from "@/components/ViewCounter/ViewCounter";
-import Script from "next/script"; // ✅ Add this import
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -45,50 +44,41 @@ export const metadata = {
     description,
     images: [image],
   },
-  // ✅ Add Google Search Console verification
-  other: {
-    "google-site-verification": "d3ZpHGSOWYYfirQNoVhab8jghx9xwHZccCBejV0fURQ",
-  },
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Preloaded Images */}
-        <link rel="preload" as="image" href="/home-hero1.webp" />
-        <link rel="preload" as="image" href="/home-hero2.webp" />
-
-        {/* JSON-LD Schema */}
+        <link
+          rel="preload"
+          as="image"
+          href="/home-hero1.webp"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/home-hero2.webp"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Carter Oil",
+              name: "Digital Aura",
               url: "https://carteroilusa.com",
               logo: "https://carteroilusa.com/favicon.svg",
+              // sameAs: [
+              //   "https://linkedin.com/company/thedigitalaura",
+              //   "https://youtube.com/@DigitalAura-h2o",
+              //   "https://facebook.com/share/1CdEhnbb42",
+              //   "https://instagram.com/digitalaura8",
+              // ],
             }),
           }}
         />
       </head>
       <body className={poppins.variable}>
-        {/* ✅ Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-72FE2JFDL2"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-72FE2JFDL2');
-          `}
-        </Script>
-
-        {/* Toasts, Layout, and Components */}
         <ToastContainer
           position="top-right"
           autoClose={2000}

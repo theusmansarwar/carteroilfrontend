@@ -32,7 +32,7 @@ const Footer = () => {
       links: [
         { name: "Equipment", path: "/products/equipment" },
         { name: "Pipes & Tubing", path: "/pipes-and-tubing" },
-        { name: "Oilfield & Gas Services", path: "/oil-and-gas-services" },
+        { name: "Oil & Gas Services", path: "/oil-and-gas-services" },
       ],
     },
     {

@@ -39,8 +39,9 @@ const partnerData = [
       "Our lubricants reduce friction, control heat, and prevent wear under heavy pressure. You gain better performance and fewer breakdowns. Every product goes through strict checks to ensure lasting reliability. Our team understands field challenges and harsh site conditions. They bring years of hands-on experience to every job. You receive help that keeps your equipment ready for any test.",
       "Carteroil focuses on safety, speed, and performance. Each service improves your output and cuts downtime. You get dependable support from start to finish. We continue to upgrade our oilfield and gas services to meet modern demands. The goal stays clear. You deserve safer, stronger, and more efficient operations. Carteroil helps you achieve that every day.",
     ],
-    title: "Oilfield & Gas",
+    title: "Oil & Gas",
     subtitle: "Services",
+    image:'/aors.png'
   },
 ];
 const performance = {
