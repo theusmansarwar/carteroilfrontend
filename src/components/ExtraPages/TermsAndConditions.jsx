@@ -162,11 +162,11 @@ const TermsAndConditions = () => {
         <li>
           Email:{" "}
           <a
-            href="mailto:info@carteroilusa.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@carteroilusa.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            info@carteroilusa.com
+            sales@carteroilusa.com{" "}
           </a>
         </li>
         <li>

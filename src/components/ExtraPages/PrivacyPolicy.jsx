@@ -173,7 +173,13 @@ const PrivacyPolicy = () => {
       </ul>
       <p>
         To exercise these rights, email us at{" "}
-        <a href="mailto:privacy@carteroilusa.com">privacy@carteroilusa.com</a>.
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@carteroilusa.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          sales@carteroilusa.com{" "}
+        </a>
         We will respond within a reasonable timeframe consistent with applicable
         laws.
       </p>
@@ -210,7 +216,13 @@ const PrivacyPolicy = () => {
       </p>
       <p>
         Email:{" "}
-        <a href="mailto:privacy@carteroilusa.com">privacy@carteroilusa.com</a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@carteroilusa.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          sales@carteroilusa.com{" "}
+        </a>
         <br />
         Website:{" "}
         <a
@@ -220,8 +232,6 @@ const PrivacyPolicy = () => {
         >
           www.carteroilusa.com
         </a>
-        <br />
-        Address: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
       </p>
 
       <p className="commitment">

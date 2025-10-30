@@ -57,7 +57,7 @@ const Footer = () => {
   ];
 
   const bottomLinks = [
-    { name: "Terms of Service", path: "/terms-and-conditions" },
+    { name: "Terms & Conditions", path: "/terms-and-conditions" },
     { name: "Privacy Policy", path: "/privacy-policy" },
   ];
 
@@ -95,7 +95,11 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>© 2025 All rights reserved</p>
+        <div className="footer-bottom-left">
+          <p>© 2025 All Rights Reserved</p> <span></span> <p>Developed By <a className="ze-link" href="https://zemalt.com/" target="_blank"
+            rel="noopener noreferrer">Zemalt</a></p>
+        </div>
+
         <div className="footer-bottom-right">
           <ul>
             {bottomLinks.map((link) => (

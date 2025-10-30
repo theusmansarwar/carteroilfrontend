@@ -59,7 +59,7 @@ const ContactForm = () => {
 
       if (res.status == 201) {
         setStatus("success");
-        toast.success(res?.message || "Form submitted successfully");
+        toast.success(res?.message || "Message sent successfully");
         setErrors({});
         setFormData({
           name: "",
@@ -213,7 +213,7 @@ const ContactForm = () => {
             ></textarea>
           </div>
 
-          <button type="submit">Submit</button>
+          <button type="submit">Send Message</button>
         </form>
       </div>
 
