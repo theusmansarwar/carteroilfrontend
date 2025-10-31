@@ -35,13 +35,13 @@ const innovationData = {
 const partnerData = [
   {
     description: `
-      <p>Carteroil believes strength grows through the right <a href=https://carteroilusa.com/about-us> partnerships</a>. Our collaboration with AORS brings expertise, innovation, and commitment to every stage of oilfield and gas operations. Together, we deliver dependable solutions that meet the high demands of modern energy production</p>
-      <p>AORS adds value through strong technical knowledge and deep field experience. Its support extends across drilling, extraction, and maintenance projects. Each operation benefits from advanced tools and proven methods that keep performance consistent under pressure.</p>
-     <p>Carteroil works closely with AORS to improve reliability and reduce risks in complex environments. The partnership reflects shared goals of safe operations, durable results, and lasting client trust.</p>
+      <p>Carteroil delivers trusted oilfield and gas services that keep your operations steady. You get support in drilling, extraction, and production without delays. Each solution protects your machines and improves system strength.</p>
+      <p>Our <a href="https://carteroilusa.com/products">lubricants</a> reduce friction, control heat, and prevent wear under heavy pressure. You gain better performance and fewer breakdowns. Every product goes through strict checks to ensure lasting reliability. Our team understands field challenges and harsh site conditions. They bring years of hands-on experience to every job. You receive help that keeps your <a href="https://carteroilusa.com/equipment">equipment</a> ready for any test.</p>
+     <p>Carteroil focuses on safety, speed, and performance. Each service improves your output and cuts downtime. You get dependable support from start to finish. We continue to upgrade our oilfield and gas services to meet modern demands. The goal stays clear. You deserve safer, stronger, and more efficient operations. Carteroil helps you achieve that every day.</p>
     `,
     title: "Oil & Gas",
     subtitle: "Services",
-    image: '/aors.png'
+    
   },
 ];
 const performance = {

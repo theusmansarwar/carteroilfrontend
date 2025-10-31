@@ -10,7 +10,7 @@ const OurPartner = ({ data }) => {
             <span>{partner.title}</span> {partner.subtitle}
           </h2>
 
-          <div dangerouslySetInnerHTML={{ __html: partner.description || "" }} />
+          <p dangerouslySetInnerHTML={{ __html: partner.description || "" }} />
 
           {/* Only show image if available */}
           {partner.image && partner.image.trim() !== "" && (

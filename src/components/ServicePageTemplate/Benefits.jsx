@@ -2,11 +2,13 @@ import React from "react";
 import "./Benefits.css";
 import { baseUrl } from "@/config/Config";
 const Benefits = ({ data }) => {
+  const resolveImage = (path) =>
+    path?.startsWith("/uploads") ? baseUrl + path : path;
   return (
     <div className="benefits">
       <div className="left">
-        <img className="img1" src={baseUrl + data.image1} alt="Benefits" />
-        <img className="img2" src={baseUrl + data.image2} alt="Benefits" />
+        <img className="img1" src={resolveImage(data.image1)} alt="Benefits" />
+        <img className="img2" src={resolveImage(data.image2)} alt="Benefits" />
       </div>
       <div className="right">
         <h2>

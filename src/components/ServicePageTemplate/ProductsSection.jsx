@@ -17,6 +17,9 @@ const ProductsSection = ({ title, data }) => {
     setSelectedProduct(null);
   };
 
+   const resolveImage = (path) =>
+      path?.startsWith("/uploads") ? baseUrl + path : path;
+
   return (
     <div className="products-section">
       <div className="inside">
@@ -32,7 +35,7 @@ const ProductsSection = ({ title, data }) => {
               <h3>
               {item.title}
               </h3>
-              <img src={baseUrl + item.image} alt={item.name} />
+              <img src={resolveImage(item.image)} alt={item.name} />
             </div>
           ))}
         </div>

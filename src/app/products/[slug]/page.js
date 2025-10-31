@@ -13,6 +13,7 @@ async function getProduct(slug) {
   try {
     const res = await fetchProductBySlug(slug);
     if (res?.product) return res.product;
+    
 
     return null;
   } catch (error) {

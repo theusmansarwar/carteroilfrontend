@@ -15,7 +15,7 @@ const BuildingQuality = ({ data }) => {
       <div className="left">
         <div className="top">
           <div className="first">
-             <img src={resolveImage(data.image1)} alt="Image" />
+            <img src={resolveImage(data.image1)} alt="Image" />
           </div>
           <div className="second">
             {" "}
@@ -32,7 +32,7 @@ const BuildingQuality = ({ data }) => {
       </div>
       <div className="right">
         <h2>{data.title}</h2>
-       <div className="dangerously-set-data" dangerouslySetInnerHTML={{ __html: data.description || "" }} />
+        <div className="dangerously-set-data" dangerouslySetInnerHTML={{ __html: data.description || "" }} />
         <div className="bottom">
           <div className="left">
             <ul>
