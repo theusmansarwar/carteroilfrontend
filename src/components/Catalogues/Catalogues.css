@@ -21,7 +21,22 @@
   background-color: #00000033;
   height: 180px;
   border-radius: 3px;
+  position: relative;
 }
+.catalogues .catalogue-card .img-cont .shareicon {
+position: absolute;
+background-color: var(--primary-color);
+height: 30px;
+width: 30px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+top: 10px;
+right: 10px;
+}
+
 .catalogues .catalogue-card .img-cont img {
   width: 100%;
   height: 100%;
@@ -73,6 +88,88 @@
   transition: transform 0.3s ease;
   color: var(--secondary-color);
 }
+
+
+.shareicon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.shareicon:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* === Modal Styles === */
+.share-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 320px;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.share-modal h3 {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+}
+
+.share-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.share-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.share-btn span {
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.share-btn:hover {
+  transform: scale(1.1);
+}
+
+.share-link {
+  font-size: 0.75rem;
+  color: #555;
+  word-break: break-all;
+  margin-bottom: 12px;
+}
+
+.close-btn {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  background: var(--primary-color);
+  opacity: 0.6;
+}
+
 
 @media (max-width: 900px) {
   .catalogues {
