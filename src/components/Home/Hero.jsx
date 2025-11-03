@@ -21,7 +21,7 @@ const heroData = [
     title1: "Reliable",
     title2: "Oilfield Services",
     desc: "Powering operations worldwide with advanced technology and proven reliability.",
-    btn1: { text: "Our Services", link: "/products/equipment" },
+    btn1: { text: "Our Services", link: "/equipment" },
     btn2: { text: "Contact Sales", link: "/contact-us" },
   },
   {
