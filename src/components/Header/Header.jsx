@@ -42,6 +42,27 @@ const catalouges = [
     name: "Industrial lubrication",
     path: "/Industrial-lubrication-Catalogue.pdf",
   },
+  
+  {
+    name: "OilField Lubrication",
+    path: "/Oilfield-lubrication-Catalogue.pdf",
+  },
+  {
+    name: "Speciality Lubrication ",
+    path: "/Specialty-lubrication-Catalogue.pdf",
+  },
+  {
+    name: "Equipments ",
+    path: "/Equipments-Catalogue.pdf",
+  },
+  {
+    name: "Pipes & Tubing ",
+    path: "/Tubing-Piping-Fabrication-Catalogue.pdf",
+  },
+  {
+    name: "Oil & Gas Services",
+    path: "/Oil-Gas-Services-Catalogue.pdf",
+  },
   {
     name: "Marine (70TBN SAE 50) ",
     path: "/Marine70TBNSAE50.pdf",
@@ -69,26 +90,6 @@ const catalouges = [
    {
     name: "Marine (9TBN SAE 30)",
     path: "/Marine9TBNSAE30.pdf",
-  },
-  {
-    name: "OilField Lubrication",
-    path: "/Oilfield-lubrication-Catalogue.pdf",
-  },
-  {
-    name: "Speciality Lubrication ",
-    path: "/Specialty-lubrication-Catalogue.pdf",
-  },
-  {
-    name: "Equipments ",
-    path: "/Equipments-Catalogue.pdf",
-  },
-  {
-    name: "Pipes & Tubing ",
-    path: "/Tubing-Piping-Fabrication-Catalogue.pdf",
-  },
-  {
-    name: "Oil & Gas Services",
-    path: "/Oil-Gas-Services-Catalogue.pdf",
   },
 ];
 
