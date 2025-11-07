@@ -1,8 +1,13 @@
-'use client';
+"use client";
 import React, { useState } from "react";
 import "./Catalogues.css";
 import { FiDownload, FiCopy } from "react-icons/fi";
-import { FaShareAlt, FaWhatsapp, FaInstagram, FaCheckCircle } from "react-icons/fa";
+import {
+  FaShareAlt,
+  FaWhatsapp,
+  FaInstagram,
+  FaCheckCircle,
+} from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { Modal } from "@mui/material";
 
@@ -26,36 +31,72 @@ const Catalogues = () => {
     },
     {
       id: 3,
-      title: "Marine Lubrication Catalogue",
-      image: "/marine-pdf.webp",
-      file: "/Marine-lubrication-Catalogue.pdf",
+      title: "Marine (9TBN SAE 30)",
+      file: "/Marine9TBNSAE30.pdf",
+      image: "/9tbn30.webp",
     },
     {
       id: 4,
+      title: "Marine (12TBN SAE 40)",
+      file: "/Marine12TBNSAE40.pdf",
+      image: "/12tbn40.webp",
+    },
+    {
+      id: 5,
+      title: "Marine (15TBN SAE 40)",
+      file: "/Marine15TBNSAE40.pdf",
+      image: "/15tbn40.webp",
+    },
+    {
+      id: 6,
+      title: "Marine (20TBN SAE 40)",
+      file: "/Marine20TBNSAE40.pdf",
+      image: "/20tbn40.webp",
+    },
+    {
+      id: 7,
+      title: "Marine (40TBN SAE 40 )",
+      file: "/Marine40TBNSAE40.pdf",
+      image: "/40tbn40.webp",
+    },
+    {
+      id: 8,
+      title: "Marine (40TBN SAE 50)",
+      file: "/Marine40TBNSAE50.pdf",
+      image: "/40tbn50.webp",
+    },
+    {
+      id: 9,
+      title: "Marine (70TBN SAE 50) ",
+      file: "/Marine70TBNSAE50.pdf",
+      image: "/70tbn50.webp",
+    },
+    {
+      id: 10,
       title: "Oilfield Lubrication Catalogue",
       image: "/oilfield-pdf.webp",
       file: "/Oilfield-lubrication-Catalogue.pdf",
     },
     {
-      id: 5,
+      id: 11,
       title: "Speciality Lubrication Catalogue",
       image: "/specialty-pdf.webp",
       file: "/Specialty-lubrication-Catalogue.pdf",
     },
     {
-      id: 6,
+      id: 12,
       title: "Equipments Catalogue",
       image: "/equipments-pdf.webp",
       file: "/Equipments-Catalogue.pdf",
     },
     {
-      id: 7,
+      id: 13,
       title: "Pipes & Tubing Catalogue",
       image: "/tubing-pdf.webp",
       file: "/Tubing-Piping-Fabrication-Catalogue.pdf",
     },
     {
-      id: 8,
+      id: 14,
       title: "Oilfield & Gas Services Catalogue",
       image: "/oil-gas-pdf.webp",
       file: "/Oil-Gas-Services-Catalogue.pdf",
@@ -75,7 +116,10 @@ const Catalogues = () => {
   };
 
   const shareToWhatsApp = () => {
-    window.open(`https://wa.me/?text=${encodeURIComponent(selectedFile)}`, "_blank");
+    window.open(
+      `https://wa.me/?text=${encodeURIComponent(selectedFile)}`,
+      "_blank"
+    );
   };
 
   const shareToEmail = () => {
@@ -85,7 +129,9 @@ const Catalogues = () => {
   };
 
   const shareToInstagram = () => {
-    alert("Instagram doesn’t support direct web sharing — copy the link instead!");
+    alert(
+      "Instagram doesn’t support direct web sharing — copy the link instead!"
+    );
   };
 
   return (
@@ -154,7 +200,7 @@ const Catalogues = () => {
 
           <p className="share-link">{selectedFile}</p>
 
-          <button className="close-btn" onClick={() => setOpen(false)} >
+          <button className="close-btn" onClick={() => setOpen(false)}>
             Close
           </button>
         </div>
