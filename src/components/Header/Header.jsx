@@ -43,8 +43,32 @@ const catalouges = [
     path: "/Industrial-lubrication-Catalogue.pdf",
   },
   {
-    name: "Marine lubrication",
-    path: "/Marine-lubrication-Catalogue.pdf",
+    name: "Marine (70TBN SAE 50) ",
+    path: "/Marine70TBNSAE50.pdf",
+  },
+   {
+    name: "Marine (40TBN SAE 50)",
+    path: "/Marine40TBNSAE50.pdf",
+  },
+   {
+    name: "Marine (40TBN SAE 40 )",
+    path: "/Marine40TBNSAE40.pdf",
+  },
+   {
+    name: "Marine (20TBN SAE 40)",
+    path: "/Marine20TBNSAE40.pdf",
+  },
+   {
+    name: "Marine (15TBN SAE 40)",
+    path: "/Marine15TBNSAE40.pdf",
+  },
+   {
+    name: "Marine (12TBN SAE 40)",
+    path: "/Marine12TBNSAE40.pdf",
+  },
+   {
+    name: "Marine (9TBN SAE 30)",
+    path: "/Marine9TBNSAE30.pdf",
   },
   {
     name: "OilField Lubrication",
