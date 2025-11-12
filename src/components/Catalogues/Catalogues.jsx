@@ -62,46 +62,11 @@ const Catalogues = () => {
     },
     {
       id: 8,
-      title: "Marine (9TBN SAE 30)",
-      file: "/Marine9TBNSAE30.pdf",
-      image: "/9tbn30.webp",
+      title: "MarinelubricationCatalogue",
+      file: "/MarinelubricationCatalogue.pdf",
+      image: "/marine-pdf.webp",
     },
-    {
-      id: 9,
-      title: "Marine (12TBN SAE 40)",
-      file: "/Marine12TBNSAE40.pdf",
-      image: "/12tbn40.webp",
-    },
-    {
-      id: 10,
-      title: "Marine (15TBN SAE 40)",
-      file: "/Marine15TBNSAE40.pdf",
-      image: "/15tbn40.webp",
-    },
-    {
-      id: 11,
-      title: "Marine (20TBN SAE 40)",
-      file: "/Marine20TBNSAE40.pdf",
-      image: "/20tbn40.webp",
-    },
-    {
-      id: 12,
-      title: "Marine (40TBN SAE 40 )",
-      file: "/Marine40TBNSAE40.pdf",
-      image: "/40tbn40.webp",
-    },
-    {
-      id: 13,
-      title: "Marine (40TBN SAE 50)",
-      file: "/Marine40TBNSAE50.pdf",
-      image: "/40tbn50.webp",
-    },
-    {
-      id: 14,
-      title: "Marine (70TBN SAE 50) ",
-      file: "/Marine70TBNSAE50.pdf",
-      image: "/70tbn50.webp",
-    },
+  
   ];
 
   const handleOpenShare = (file) => {
