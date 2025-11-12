@@ -44,7 +44,7 @@ const catalouges = [
   },
    {
     name: "Marine Lubrication ",
-    path: "/MarinelubricationCatalogue",
+    path: "/MarinelubricationCatalogue.pdf",
   },
   {
     name: "OilField Lubrication",
