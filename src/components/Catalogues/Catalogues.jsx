@@ -62,7 +62,7 @@ const Catalogues = () => {
     },
     {
       id: 8,
-      title: "MarinelubricationCatalogue",
+      title: "Marine lubrication Catalogue",
       file: "/MarinelubricationCatalogue.pdf",
       image: "/marine-pdf.webp",
     },
