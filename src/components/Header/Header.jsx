@@ -31,6 +31,7 @@ const equipments = [
   { name: "Equipment", path: "/equipment" },
   { name: "Pipes & Tubing", path: "/pipes-and-tubing" },
   { name: "Oil & Gas Services", path: "/oil-and-gas-services" },
+  { name: "Carter OFS", path: "/carter-ofs" },
 ];
 
 const catalouges = [

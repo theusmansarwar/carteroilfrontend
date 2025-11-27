@@ -14,7 +14,7 @@ const ProductsAndServices = () => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const res = await fetchAllProducts(1, 6); 
+        const res = await fetchAllProducts(1, 6);
         if (res?.products) {
           setProducts(res.products);
         }
@@ -28,7 +28,6 @@ const ProductsAndServices = () => {
   }, []);
 
   if (loading) return <HomeServicesSkeleton />;
-
 
   return (
     <div className="products-services">
@@ -45,6 +44,8 @@ const ProductsAndServices = () => {
       </p>
 
       <div className="products-container">
+
+        {/* ---------- Dynamic Products ---------- */}
         {products.map((product) => (
           <div
             className="each-product"
@@ -55,13 +56,25 @@ const ProductsAndServices = () => {
               <img
                 src={baseUrl + product.icon}
                 alt={product.title}
-                onError={(e) => (e.target.src = "/default-icon.svg")}
               />
             </div>
             <h3>{product.title}</h3>
             <p>{product.short_description}</p>
           </div>
         ))}
+
+        {/* ---------- STATIC CARD ---------- */}
+        <div className="each-product static-card" onClick={() => router.push("/carter-ofs")}>
+          <div className="icon-container">
+            <img src="/ofs-icon.svg" alt="OFS" />
+          </div>
+          <h3>Oil Field Services
+          </h3>
+          <p>
+           Reliable oilfield solutions improving drilling, production, maintenance, efficiency, safety, and operational performance.
+          </p>
+        </div>
+
       </div>
     </div>
   );
