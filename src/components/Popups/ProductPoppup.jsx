@@ -7,6 +7,10 @@ import { IoCloseCircleSharp } from "react-icons/io5";
 import { baseUrl } from "@/config/Config";
 const ProductPoppup = ({ onClose, product }) => {
   const router = useRouter();
+
+  const resolveImage = (path) =>
+    path?.startsWith("/uploads") ? baseUrl + path : path;
+
   return (
     <div className="product-popup">
       <div className="popup-card">
@@ -15,14 +19,14 @@ const ProductPoppup = ({ onClose, product }) => {
           <h3>
             {product.title}
           </h3>
-          <img src={baseUrl + product.image} alt="" />
+          <img src={resolveImage(product.image)} alt="" />
         </div>
         <div className="right">
           <h2>{product.title}</h2>
-           <div
-          className="popup-description"
-          dangerouslySetInnerHTML={{ __html: product?.description || "" }}
-        />
+          <div
+            className="popup-description"
+            dangerouslySetInnerHTML={{ __html: product?.description || "" }}
+          />
           <Button
             variant="filled"
             color="white"
