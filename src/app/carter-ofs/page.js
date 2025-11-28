@@ -118,21 +118,7 @@ const benefitsData = {
       description:
         "Trained offshore crews handle installation and maintenance. You can depend on them in high-pressure marine conditions.",
     },
-    {
-      title: "Compliance-Ready Services",
-      description:
-        "NACE, API, and global standards ensure every task meets industry requirements. Your projects remain safe and approved.",
-    },
-    {
-      title: "Cost Efficiency",
-      description:
-        "Optimised workflows reduce repair and maintenance costs. You benefit from stable, long-term performance.",
-    },
-    {
-      title: "End-to-End Management",
-      description:
-        " From planning to execution, Carteroil manages full project cycles. You gain seamless coordination across every stage.",
-    },
+    
   ],
 };
 
