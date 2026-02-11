@@ -29,12 +29,11 @@ const Catalogues = () => {
       image: "/industrial-pdf.webp",
       file: "/Industrial-lubrication-Catalogue.pdf",
     },
-    
     {
       id: 3,
-      title: "Oilfield Lubrication Catalogue",
-      image: "/oilfield-pdf.webp",
-      file: "/Oilfield-lubrication-Catalogue.pdf",
+      title: "Marine lubrication Catalogue",
+      file: "/MarinelubricationCatalogue.pdf",
+      image: "/marine-pdf.webp",
     },
     {
       id: 4,
@@ -50,10 +49,11 @@ const Catalogues = () => {
     },
     {
       id: 6,
-      title: "Pipes & Tubing Catalogue",
-      image: "/tubing-pdf.webp",
-      file: "/Tubing-Piping-Fabrication-Catalogue.pdf",
+      title: "Oilfield Lubrication Catalogue",
+      image: "/oilfield-pdf.webp",
+      file: "/Oilfield-lubrication-Catalogue.pdf",
     },
+
     {
       id: 7,
       title: "Oilfield & Gas Services Catalogue",
@@ -62,11 +62,10 @@ const Catalogues = () => {
     },
     {
       id: 8,
-      title: "Marine lubrication Catalogue",
-      file: "/MarinelubricationCatalogue.pdf",
-      image: "/marine-pdf.webp",
+      title: "Pipes & Tubing Catalogue",
+      image: "/tubing-pdf.webp",
+      file: "/Tubing-Piping-Fabrication-Catalogue.pdf",
     },
-  
   ];
 
   const handleOpenShare = (file) => {

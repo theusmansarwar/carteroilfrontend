@@ -43,31 +43,33 @@ const catalouges = [
     name: "Industrial lubrication",
     path: "/Industrial-lubrication-Catalogue.pdf",
   },
-   {
+  {
     name: "Marine Lubrication ",
     path: "/MarinelubricationCatalogue.pdf",
   },
-  {
-    name: "OilField Lubrication",
-    path: "/Oilfield-lubrication-Catalogue.pdf",
-  },
+
   {
     name: "Speciality Lubrication ",
     path: "/Specialty-lubrication-Catalogue.pdf",
   },
+
   {
     name: "Equipments ",
     path: "/Equipments-Catalogue.pdf",
   },
   {
-    name: "Pipes & Tubing ",
-    path: "/Tubing-Piping-Fabrication-Catalogue.pdf",
+    name: "OilField Lubrication",
+    path: "/Oilfield-lubrication-Catalogue.pdf",
   },
+
   {
     name: "Oil & Gas Services",
     path: "/Oil-Gas-Services-Catalogue.pdf",
   },
- 
+  {
+    name: "Pipes & Tubing ",
+    path: "/Tubing-Piping-Fabrication-Catalogue.pdf",
+  },
 ];
 
 const Header = () => {
@@ -371,9 +373,9 @@ const Header = () => {
                       <span
                         className={`mobile-link ${isActive ? "active" : ""}`}
                         onClick={() => {
-                    router.push("/catalogues");
-                    setMobileMenu(false);
-                  }}
+                          router.push("/catalogues");
+                          setMobileMenu(false);
+                        }}
                       >
                         {link.name}
                       </span>
